@@ -1,7 +1,7 @@
 const Partnership = () => {
   return (
     <div className="test">
-      hello
+      hello world
     </div>
   );
 }
