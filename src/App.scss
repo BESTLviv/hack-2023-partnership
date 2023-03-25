@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 html,
 body,
 div,
@@ -108,10 +109,6 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
-  list-style: none;
-}
 
 blockquote,
 q {
@@ -131,16 +128,17 @@ table {
   border-spacing: 0;
 }
 
-* {
-  background-color: black;
-  color: white;
-}
 
 .App {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   background-color: black;
+  color: #ffffff;
+  // overflow: hidden;
+}
 
+p {
+  line-height: 120%;
 }
 
 .App-logo {
