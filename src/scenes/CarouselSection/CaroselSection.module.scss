@@ -1,5 +1,6 @@
 $small: 300px;
-$medium: 1200px;
+$medium: 600px;
+$big: 1200px;
 
 .carouselSectionContainer {
   display: flex;
@@ -16,7 +17,7 @@ $medium: 1200px;
     width: 500px;
     color: white;
     max-width: 60%;
-    text-align: center;
+    text-align: start;
     margin-bottom: 54px;
 
 
@@ -28,25 +29,43 @@ $medium: 1200px;
 
     p {
       font-family: 'Play', sans-serif;
-      font-size: 24px;
+      font-size: 16px;
+
     }
 
     p.space {
       margin-bottom: 20px;
     }
 
+    @media screen and (min-width: $medium) {
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: $big) {
+      p {
+        font-size: 24px;
+        text-align: start;
+
+      }
+    }
+
 
   }
 
-  @media screen and (min-width: $medium) {
+  @media screen and (min-width: $big) {
     flex-direction: row;
     justify-content: center;
     .textContainer {
       order: 1;
       width: 600px;
-      text-align: start;
       margin-left: 79px;
       margin-bottom: 0
+    }
+    p {
+      font-size: 24px;
+
     }
   }
 
