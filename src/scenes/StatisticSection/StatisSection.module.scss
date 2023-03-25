@@ -1,0 +1,15 @@
+.statisticSectionContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statisticContentWrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,9 @@
+.socialMediaItemContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  align-items: center;
+}
+.socialMediaItemContainer:not(:last-child){
+  margin-bottom: 20px;
+}
