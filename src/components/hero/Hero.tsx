@@ -2,7 +2,7 @@ import { ReactComponent as IconMenu } from '../../assets/images/hero/logo-hack.s
 
 import style from '../hero/Hero.module.scss';
 
-export const Hero: React.FC = () => {
+const Hero: React.FC = () => {
   return (
     <div className={style.hero}>
       <div>
@@ -12,8 +12,10 @@ export const Hero: React.FC = () => {
         27-28 травня
       </div>
       <div>
-        <button className={style.become_partner_btn}>Стати партнером</button>
+        <a href="#" className={style.become_partner_btn}>Стати партнером</a>
       </div>
     </div>
   );
 }
+
+export default Hero;
