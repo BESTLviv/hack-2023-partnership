@@ -1,0 +1,6 @@
+.carouselContainer {
+    width: 436px;
+    max-width: 80%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
