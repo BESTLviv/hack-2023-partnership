@@ -3,8 +3,7 @@ import * as React from 'react';
 import styles from './ChartInfo.module.scss'
 import RangeElement from "./RangeElement";
 
-type Props = {};
-const ChartInfo = (props: Props) => {
+const ChartInfo = () => {
     return (
         <div className={styles.chartInfoContainer}>
             <div className={styles.chartInfoBorder}/>

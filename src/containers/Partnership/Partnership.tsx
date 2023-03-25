@@ -3,8 +3,9 @@ import HeaderText from '../../components/HeaderText';
 import Hero from '../../components/hero/Hero';
 import QA from '../../components/qa/QA';
 import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
-import StatisticSection from "../../scenes/StatisticSection/StatisticSection";
-
+import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
+import Cart from '../../components/cart/Cart';
+import Footer from './components/Footer';
 
 const Partnership = () => {
   return (
@@ -16,6 +17,7 @@ const Partnership = () => {
       <QA />
       <Cart />
       <StatisticSection/>
+      <Footer />
     </div>
   );
 };

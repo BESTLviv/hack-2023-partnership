@@ -1,0 +1,20 @@
+.footer{
+    padding: 16px 80px;
+    background-color: rgb(66, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.year{
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+.year {
+    width: 151px;
+    height: 78px;
+}

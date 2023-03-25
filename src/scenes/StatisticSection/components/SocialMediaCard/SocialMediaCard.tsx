@@ -1,17 +1,20 @@
 import * as React from 'react';
-import GradientBox from "../../../../components/GradientBox/GradientBox";
+import GradientBox from '../../../../components/GradientBox/GradientBox';
 import styles from './SocialMediaCard.module.scss'
 import Facebook from '../../../../assets/icons/Facebook.svg'
-import StyledText from "../../../../components/StyledText";
-import {In, Inst, Telegram} from "../../../../assets";
+import StyledText from '../../../../components/StyledText';
+import {In, Inst, Telegram} from '../../../../assets';
 
 
-type Props = {};
+type Props = {
+ icon: string;
+ text: string;
+};
 
-const SocialMediaItem = ({Icon, text}) => {
+const SocialMediaItem = ({icon, text}: Props) => {
     return (
         <div className={styles.socialMediaItemContainer}>
-            <img src={Icon} alt={'#'}/>
+            <img src={icon} alt={'#'}/>
             <StyledText styles={{fontSize: 26}}>
                 {text}
             </StyledText>
@@ -45,7 +48,7 @@ const SocialMediaCard = () => {
             <GradientBox padding={20}>
                 <>
                     {data.map(({image, text}) => (
-                        <SocialMediaItem key={text} Icon={image} text={text}/>
+                        <SocialMediaItem key={text} icon={image} text={text}/>
                     ))}
                 </>
 
