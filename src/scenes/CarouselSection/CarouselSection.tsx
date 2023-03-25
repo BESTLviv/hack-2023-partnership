@@ -1,13 +1,13 @@
 // @flow
 import * as React from 'react';
-import Carousel from "../../shared/components/Carousel";
-import {IMG_8088, IMG_8091, IMG_8200, IMG_9447} from "../../assets";
-import {ICard} from "./types";
+import Carousel from '../../shared/components/Carousel';
+import {IMG_8088, IMG_8091, IMG_8200, IMG_9447} from '../../assets';
+import {ICard} from './types';
 import styles from './CaroselSection.module.scss'
 
 const cards: ICard[] = [
     {
-        image: IMG_8088
+        image: IMG_8088 
     },
     {
         image: IMG_8091
@@ -32,7 +32,7 @@ const CarouselSection = () => {
                     програмний продукт за 24
                     години в форматі non-stop programming.
                 </p>
-                <p>Цьогорічна тема "волонтерство" дозволить студентам долучитися до важливого суспільного процесу та
+                <p>Цьогорічна тема &quot;волонтерство&quot; дозволить студентам долучитися до важливого суспільного процесу та
                     зосередитися на розробці креативних й інноваційних рішень. які допоможуть підвищити ефективність та
                     популярність волонтерської діяльності в Україні.
                 </p>
