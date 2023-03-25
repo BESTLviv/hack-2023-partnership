@@ -6,7 +6,8 @@ import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
 import StatisticSection from "../../scenes/StatisticSection/StatisticSection";
 import Cart from '../../components/cart/Cart';
 import Feedback from '../../components/feedback/Feedback';
-
+import Offer from './components/Offer';
+import Footer from './components/Footer';
 
 const Partnership = () => {
   return (
@@ -16,9 +17,11 @@ const Partnership = () => {
       <CarouselSection />
       <HeaderText text={'для партнерів це:'} />
       <QA />
+      <Offer />
       <Cart />
       <StatisticSection />
       <Feedback />
+      <Footer />
     </div>
   );
 };
