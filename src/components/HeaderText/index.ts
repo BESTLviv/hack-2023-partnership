@@ -1,3 +1,3 @@
-import HeaderText from "./HeaderText";
+import HeaderText from './HeaderText';
 
 export default HeaderText;
