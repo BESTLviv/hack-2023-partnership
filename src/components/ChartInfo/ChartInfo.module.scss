@@ -1,0 +1,25 @@
+.chartInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-left: 40px;
+  flex-shrink: 1;
+  max-width: 90%;
+
+}
+
+.rangesWrapper {
+  padding: 10px 0
+}
+
+.chartInfoBorder {
+  display: flex;
+  width: 4px;
+  background-color: white;
+  position: absolute; /* position the child element relative to the parent element */
+  top: 0; /* position the child element at the top of the parent element */
+  left: 0; /* position the child element at the left of the parent element */
+  height: 100%;
+  box-shadow: 0px 0px 30px 2px rgba(19, 233, 116, 0.8);
+}
