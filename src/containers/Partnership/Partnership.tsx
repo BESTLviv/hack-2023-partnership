@@ -1,8 +1,13 @@
+import Header from '../../components/header/Header';
 import HeaderText from '../../components/HeaderText';
+import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
+
 const Partnership = () => {
   return (
     <div className="test">
-      <HeaderText text={"для партнерів це:"}/>
+      <Header />
+      <CarouselSection />
+      <HeaderText text={'для партнерів це:'} />
     </div>
   );
 };

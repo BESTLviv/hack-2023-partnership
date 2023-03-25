@@ -1,0 +1,28 @@
+.become_partner_btn {
+  font-size: 12px;
+  color: white;
+  border: white 2px solid;
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 100px;
+  transition: all 0.15s linear;
+}
+
+.become_partner_btn:hover {
+  box-shadow: 0px 0px 12px 7px rgb(45, 171, 102);
+}
+
+.become_partner_btn:active {
+  box-shadow: inset 0px 55px 25px -30px rgba(45, 171, 102, 1), 0px 0px 20px 7px rgb(45, 171, 102);
+}
+
+@media screen and (max-width: 576px) {
+  .become_partner_btn {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+
+  .become_partner_btn:active {
+    box-shadow: inset 0px 50px 25px -30px rgba(45, 171, 102, 1), 0px 0px 20px 7px rgb(45, 171, 102);
+  }
+}
