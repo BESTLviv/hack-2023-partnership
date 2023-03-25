@@ -5,13 +5,20 @@
     border-radius: 30px;
     background: linear-gradient(111.89deg, #1A4C31 47.59%, rgba(26, 76, 49, 0) 95.29%);
     position: relative;
+    width: 356px;
+    max-width: 90%;
     padding: 0 23px;
+    padding-bottom: 20px;
   }
+
   &_wrapper_main {
-    padding: 0 55px;
+    padding: 0 23px;
     align-self: center;
-    width: auto;
+    padding-bottom: 20px;
+    width: 806px;
+    max-width: 90%;
   }
+
   &_title {
     align-self: flex-start;
     font-family: 'Play', sans-serif;
@@ -22,27 +29,32 @@
     line-height: 120%;
     text-transform: uppercase;
   }
+
   &_info_button {
     position: absolute;
     right: 23px;
     top: 5px;
   }
+
   &_list_wrapper {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     margin-bottom: auto;
   }
+
   &_list_text {
     text-align: start;
     font-family: 'Play', sans-serif;
     font-size: 20px;
   }
+
   &_pick {
     margin-top: 17px;
     margin-bottom: 37px;
-    font-size: 32px;
+    font-size: 20px;
   }
+
   &_price {
     position: absolute;
     background: #0D0D0D;
@@ -53,29 +65,37 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   &_price_text {
     font-size: 32px;
+    font-family: Play, sans-serif;
+
   }
-  
+
 }
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 576px) {
   .package {
-    &_wrapper_main {
-      margin: 0 20px;
+    &_wrapper {
+      padding-bottom: 0;
     }
+
     &_title {
       font-size: 20px;
     }
+
     &_list_text {
       font-size: 14px;
     }
+
     &_pick {
       font-size: 14px;
     }
+
     &_price_text {
       font-size: 20px;
     }
+
     &_info_button {
       right: 10px;
       top: 2px
