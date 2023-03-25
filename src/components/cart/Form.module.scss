@@ -1,0 +1,41 @@
+.formInput {
+  font-family: 'Play', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+}
+
+.formButton {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 12px 7px rgb(45, 171, 102);
+  }
+
+  &:active {
+    box-shadow: inset 0px 55px 25px -30px rgba(45, 171, 102, 1), 0px 0px 20px 7px rgb(45, 171, 102);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  justify-content: space-between;
+}
