@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+.qa_item {
+  border: 3px #fff solid;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px rgba(45,171,102,1);
+  width: 610px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.qa_item:hover {
+  box-shadow: 
+    0px 0px 10px 3px rgba(45,171,102,1),
+    inset 0px 55px 25px -30px rgba(45,171,102,1);
+  ;
+}
+
+.qa_item_question, .qa_item_answer {
+  background: transparent;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.qa_qa {
+  background: transparent;
+  width: 100%;
+}
+
+.qa_item_hr {
+  margin: 20px 0;
+  background: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(45,171,102,1);
+  width: 95%;
+}
+
+.qa_item_icon {
+  width: 80px;
+  height: 45px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+@media screen and (max-width: 630px) {
+  .qa_item {
+    width: 400px;
+  }
+
+  .qa_item:hover {
+    box-shadow: 
+      0px 0px 10px 3px rgba(45,171,102,1),
+      inset 0px 55px 25px -10px rgba(45,171,102,1);
+    ;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .qa_item {
+    width: 300px;
+  }
+}
