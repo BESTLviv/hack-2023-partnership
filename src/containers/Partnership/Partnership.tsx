@@ -5,6 +5,7 @@ import QA from '../../components/qa/QA';
 import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
 import Offer from './components/Offer';
 import Cart from '../../components/cart/Cart'
+import Team from '../../components/team/Team';
 import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
 import Footer from './components/Footer';
 
@@ -19,6 +20,7 @@ const Partnership = () => {
       <Offer />
       <Cart />
       <StatisticSection/>
+      <Team />
       <Footer />
     </div>
   );

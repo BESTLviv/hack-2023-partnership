@@ -11,7 +11,7 @@ interface QAItemProps {
 
 // eslint-disable-next-line react/prop-types
 const QAItem: React.FC<QAItemProps> = ({question, answer}) => {
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
 
   return (
     <Flex onClick={() => setIsOpened(!isOpened)} className={style.qa_item} flexDirection={'row'}>
