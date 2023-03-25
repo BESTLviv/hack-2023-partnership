@@ -1,6 +1,6 @@
 import { ReactComponent as IconMenu } from '../../assets/images/hero/logo-hack.svg';
 
-import style from '../hero/Hero.module.css';
+import style from '../hero/Hero.module.scss';
 
 export const Hero: React.FC = () => {
   return (

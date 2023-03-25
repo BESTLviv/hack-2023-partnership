@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './HeaderText.module.scss';
-import { Box, Text, Link, Image, extendTheme } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 
 interface Props {
   text: string;
