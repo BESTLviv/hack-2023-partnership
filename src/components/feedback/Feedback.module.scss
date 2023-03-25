@@ -1,0 +1,49 @@
+.header {
+  margin: 20px 0;
+  .header_desktop {
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 2px solid #1a4c31;
+    border-bottom: 2px solid #1a4c31;
+    width: 100%;
+  }
+
+  .header_mobile {
+    margin: 10px 20px;
+  }
+}
+
+.drawer_content {
+  background: transparent;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.drawer_body {
+  border-radius: 0px 30px 30px 0px;
+  color: white;
+  background: radial-gradient(107.31% 107.31% at 19.28% 17.52%, #2dab66 0%, #0d0d0d 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer_link {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: start;
+  margin: 20px 10px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.secondContainer {
+  display: flex;
+  flex-direction: row;
+}
