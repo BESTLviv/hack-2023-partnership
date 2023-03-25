@@ -1,14 +1,15 @@
 import Header from '../../components/header/Header';
-
-import CarouselSection from "../../scenes/CarouselSection/CarouselSection";
+import HeaderText from '../../components/HeaderText';
+import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
 
 const Partnership = () => {
   return (
     <div className="test">
       <Header />
-      <CarouselSection/>
+      <CarouselSection />
+      <HeaderText text={'для партнерів це:'} />
     </div>
   );
-}
+};
 
 export default Partnership;
