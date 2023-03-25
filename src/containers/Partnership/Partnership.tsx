@@ -4,6 +4,7 @@ import Hero from '../../components/hero/Hero';
 import QA from '../../components/qa/QA';
 import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
 import Cart from '../../components/cart/Cart'
+import Team from '../../components/team/Team';
 
 const Partnership = () => {
   return (
@@ -14,6 +15,7 @@ const Partnership = () => {
       <HeaderText text={'для партнерів це:'} />
       <QA />
       <Cart />
+      <Team />
     </div>
   );
 };
