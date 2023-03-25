@@ -1,0 +1,62 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 88px;
+}
+
+.hack_logo {
+  width: 285px;
+  height: 300px;
+  margin-bottom: 75px;
+}
+
+.event_date {
+  font-size: 25px;
+  color: #2DAB66;
+  margin-bottom: 60px;
+}
+
+.become_partner_btn {
+  font-size: 16px;
+  color: white;
+  border: white 4px solid;
+  background: transparent;
+  padding: 18px 35px;
+  border-radius: 43px;
+  transition: all .15s linear;
+}
+
+.become_partner_btn:hover {
+  box-shadow: 0px 0px 20px 7px rgb(45,171,102);
+}
+
+.become_partner_btn:active {
+  box-shadow: 
+    inset 0px 55px 25px -30px rgba(45,171,102,1),
+    0px 0px 20px 7px rgb(45,171,102);
+}
+
+@media screen and (max-width: 576px) {
+  .hack_logo {
+    width: 235px;
+    height: 225px;
+    margin-bottom: 35px;
+  }
+
+  .event_date {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .become_partner_btn {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+
+  .become_partner_btn:active {
+    box-shadow: 
+      inset 0px 50px 25px -30px rgba(45,171,102,1),
+      0px 0px 20px 7px rgb(45,171,102);
+  }
+}
