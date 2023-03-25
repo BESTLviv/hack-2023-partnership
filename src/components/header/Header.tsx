@@ -22,6 +22,7 @@ const Header = () => {
   ];
 
   return (
+    
     <Flex justify="space-between" align="center" className={style.header}>
       <Box display={{ base: 'block', md: 'none' }} className={style.header_mobile}>
         <HamburgerIcon w={30} h={30} onClick={onOpen} className={style.hamburger_icon} />
