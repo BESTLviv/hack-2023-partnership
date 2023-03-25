@@ -3,8 +3,9 @@ import HeaderText from '../../components/HeaderText';
 import Hero from '../../components/hero/Hero';
 import QA from '../../components/qa/QA';
 import CarouselSection from '../../scenes/CarouselSection/CarouselSection';
+import Offer from './components/Offer';
+import Cart from '../../components/cart/Cart'
 import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
-import Cart from '../../components/cart/Cart';
 import Footer from './components/Footer';
 
 const Partnership = () => {
@@ -15,6 +16,7 @@ const Partnership = () => {
       <CarouselSection />
       <HeaderText text={'для партнерів це:'} />
       <QA />
+      <Offer />
       <Cart />
       <StatisticSection/>
       <Footer />
