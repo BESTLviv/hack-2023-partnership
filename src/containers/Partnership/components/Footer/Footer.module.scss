@@ -2,19 +2,44 @@
     padding: 16px 80px;
     background-color: rgb(66, 65, 65);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
 }
 
 .year{
+    width: 179px;
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 28px;
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;    
 }
-.year {
-    width: 151px;
-    height: 78px;
+.socials {
+    display:flex;
+    width: 179px;
+    height: 38px;
 }
+
+.bestLogo{
+   
+    margin:0 auto;
+    width: 152px;
+    height: 76px;
+}
+@media screen and (max-width: 768px) {
+    .bestLogo {
+      width: 50px;
+      height: 26px;
+    }
+    .year{
+        width: 29px;
+        height: 12px;
+        font-size: 10px;
+    }
+    .socials{
+        height: 26px;
+        width: 100px;
+    }
+    .footer{
+        padding: 10px 17px;
+    }
+  }
