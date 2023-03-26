@@ -22,7 +22,7 @@ const Feedback = () => {
   ];
 
   return (
-    <div className={style.feedbeckContainer}>
+    <div className={style.feedbackContainer}>
       <h1 className="title">відгуки партнерів</h1>
       <div className="feedback_flex_wrapper">
 
@@ -58,11 +58,6 @@ const Feedback = () => {
           </div>
         </div>
       </div>
-
-      <Flex justify="space-between" align="center" className={style.feedback}>
-        hello
-      </Flex>
-
     </div>
   );
 };
