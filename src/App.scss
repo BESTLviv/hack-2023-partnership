@@ -177,6 +177,8 @@ p {
   }
 }
 
+
+// TODO: transfer styles to Feedback.module.scss!!!!!!!!!!
 .title {
   font-size: 36px;
   line-height: 120%;
@@ -205,7 +207,7 @@ p {
     }
   }
 }
-//MOBILE 
+
 .company_feedback {
   border: 2px solid white;
   border-radius: 20px;
@@ -247,7 +249,8 @@ p {
     
   }
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    font-size: 20px;
   }
   .company_feedback {
     margin: 12px 0;
@@ -263,3 +266,4 @@ p {
     text-align: center;
   }
 }
+// TODO: transfer styles to Feedback.module.scss
