@@ -8,6 +8,7 @@ import Cart from '../../components/cart/Cart'
 import Team from '../../components/team/Team';
 import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
 import Footer from './components/Footer';
+import ProjectOrganizator from '../../components/ProjectOrganizator/ProjectOrganizator';
 
 const Partnership = () => {
   return (
@@ -17,6 +18,7 @@ const Partnership = () => {
       <CarouselSection />
       <HeaderText text={'для партнерів це:'} />
       <QA />
+      <ProjectOrganizator />
       <Offer />
       <Cart />
       <StatisticSection/>
