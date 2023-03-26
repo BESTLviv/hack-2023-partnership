@@ -22,20 +22,41 @@ const Feedback = () => {
   ];
 
   return (
-    <div className="div">
+    <div className={style.feedbeckContainer}>
       <h1 className="title">відгуки партнерів</h1>
+      <div className="feedback_flex_wrapper">
 
-      <div
-        className={`${style.feedback_grid} ${style.container}`}
-      >
-         <div className={`bordered_block ${style.first}`}>A</div>
-        
-         <div className={style.secondContainer}>
-          <div className={`bordered_block ${style.second}`}>B</div>
-          <div className={`bordered_block ${style.third}`}>C</div>
-         </div>
+        <div
+          className={`feedback_container`}
+        >
+          <div className="company_feedback">
+            <h3 className="feedback_title">Tsukat</h3>
+            <p>
+            На заході був проведений ефективний нетворкінг, який дав перші результати майже одразу, організатори швидко реагували на зміни та оформили чудовий звіт. Загалом залишились позитивні враження.
 
+            </p>
+          </div>  
 
+          <div className={`others_flex`}>
+
+            <div className="company_feedback">
+            <h3 className="feedback_title">OSF DIGITAl</h3>
+
+              <p>
+              Хороший івент, для нас це був цікавий досвід.
+              </p>
+            </div>
+
+            <div className="company_feedback">
+            <h3 className="feedback_title">Keepit</h3>
+
+              <p>
+              Подія нам дуже сподобалась і надихнула.
+              </p>
+            </div>
+
+          </div>
+        </div>
       </div>
 
       <Flex justify="space-between" align="center" className={style.feedback}>
