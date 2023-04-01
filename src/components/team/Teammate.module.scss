@@ -33,3 +33,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 576px) {
+  .teammate {
+    padding: 0;
+  }
+}
+  

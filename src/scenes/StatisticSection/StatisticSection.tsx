@@ -1,10 +1,9 @@
 // @flow
 import * as React from 'react';
 import styles from './StatisSection.module.scss'
-import HeaderText from "../../components/HeaderText";
-import GradientBox from "../../components/GradientBox/GradientBox";
-import ChartInfo from "../../components/ChartInfo";
-import SocialMediaCard from "./components/SocialMediaCard";
+import HeaderText from '../../components/HeaderText';
+import ChartInfo from '../../components/ChartInfo';
+import SocialMediaCard from './components/SocialMediaCard';
 
 const StatisticSection = () => {
     return (

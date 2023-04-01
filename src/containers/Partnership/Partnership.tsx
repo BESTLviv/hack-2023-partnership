@@ -8,24 +8,28 @@ import Cart from '../../components/cart/Cart'
 import Team from '../../components/team/Team';
 import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
 import Footer from './components/Footer';
-import ProjectOrganizator from '../../components/ProjectOrganizator/ProjectOrganizator';
+import ProjectOrganizator from './components/ProjectOrganizator/ProjectOrganizator';
 import Feedback from '../../components/feedback/Feedback';
+import styles from './Partnership.module.scss';
 
 const Partnership = () => {
   return (
     <div className="test">
       <Header />
-      <Hero />
-      <CarouselSection />
-      <HeaderText text={'для партнерів це:'} />
-      <QA />
-      <ProjectOrganizator />
-      <Offer />
-      <Cart />
-      <StatisticSection/>
-      <Team />
-      <StatisticSection />
-      <Feedback />
+      <div className={styles.contentWrapper}>
+        <Hero />
+        {/* <CarouselSection /> */}
+        {/* <HeaderText text={'для партнерів це:'} /> */}
+        <Offer />
+        <Cart />
+        {/* <StatisticSection/> */}
+        <Team />
+        {/* <StatisticSection /> */}
+        <Feedback />
+        <QA />
+        {/* <ProjectOrganizator /> */}
+
+      </div>
       <Footer />
     </div>
   );

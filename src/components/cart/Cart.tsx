@@ -1,6 +1,7 @@
 import { Grid, Flex } from '@chakra-ui/react';
 import CustomForm from './CustomForm';
 import styles from './Cart.module.scss';
+import HeaderText from '../HeaderText';
 
 const Left = () => {
   return (
@@ -26,7 +27,7 @@ const Right = () => {
 const Cart = () => {
   return (
     <div>
-      <h1 className={styles.title}>Кошик</h1>
+      <HeaderText text='Кошик'/>
       <Grid
         className={styles.cart_block}
         templateColumns={{

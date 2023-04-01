@@ -1,6 +1,5 @@
 .offer {
   &_wrapper {
-    margin-top: 283px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +20,8 @@
     flex: 1;
     justify-content: center;
     align-items: stretch;
-    margin: 40px 5% 0 5%
+    margin: 40px 5% 0 5%;
+    width: 100%;
   }
 }
 
@@ -44,10 +44,6 @@
 
 @media screen and (max-width: 576px) {
   .offer {
-    &_wrapper {
-      margin-top: 76px;
-    }
-
     &_empty_space {
       margin-top: 13px;
     }

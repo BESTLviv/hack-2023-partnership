@@ -1,8 +1,8 @@
 import { Box, Flex } from '@chakra-ui/react';
-import HeaderText from '../HeaderText';
+import HeaderText from '../../../../components/HeaderText';
 
-import BestLogo from '../../assets/images/organiser/best_logo.svg';
-import EuropeMap from '../../assets/images/organiser/europe_map.svg';
+import BestLogo from '../../../../assets/images/organiser/best_logo.svg';
+import EuropeMap from '../../../../assets/images/organiser/europe_map.svg';
 
 import style from '../ProjectOrganizator/ProjectOrganizator.module.scss';
 import BestData, { BestDataProps } from './BestData';
@@ -18,7 +18,7 @@ const ProjectOrganizator: React.FC = () => {
     <>
       <HeaderText text="Організатор проєкту"/>
       <Flex flexDirection={'column'} alignItems={'center'} marginTop="75px">
-        <Flex flexDirection={'row'} justifyContent={'center'} alignItems={'center'} marginBottom="75px" width="620px">
+        <Flex flexDirection={['column', 'column', 'row']} justifyContent={'center'} alignItems={'center'} marginBottom="75px">
           <img src={BestLogo} alt="BEST Logo" style={{background: 'transparent', display: 'block'}} width={250}/>
           <Box className={style.projorg_best_description}>
             <span className={style.projorg_BEST}>BEST</span> — це неприбуткова громадська організація, яка об’єднує студентів технічних спеціальностей для забезпечення обміну знаннями та співпраці компаній, університетів та студентів Європи.

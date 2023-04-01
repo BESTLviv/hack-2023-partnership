@@ -78,6 +78,11 @@
   .package {
     &_wrapper {
       padding-bottom: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    &_wrapper_main {
+      margin-top: 13px;
     }
 
     &_title {

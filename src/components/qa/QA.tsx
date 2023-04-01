@@ -2,12 +2,13 @@ import { Flex } from '@chakra-ui/layout';
 import React from 'react';
 
 import style from '../qa/QA.module.scss';
+import HeaderText from '../HeaderText';
 import QAItem from './QAItem';
 
 const QA: React.FC = () => {
   return (
     <Flex className={style.qa_block} flexDirection={'column'} alignItems={'center'}>
-      <h3 className={style.qa_header}>Q/A</h3>
+      <HeaderText text="Q/A" />
       <div className={style.qa_qas}>
         <QAItem
           question="Чи буде призупинено захід у випадку вимкнення електроенергії?"

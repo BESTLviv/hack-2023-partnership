@@ -19,7 +19,7 @@ const CustomForm = () => {
         name="custom-checkbox"
         checked={checked}
         onChange={(event) => setChecked(event.target.checked)}
-        labelText="постійний партнер"
+        labelText="Постійний партнер"
       />
       <input
         type="text"

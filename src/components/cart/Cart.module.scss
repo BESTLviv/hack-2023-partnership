@@ -15,6 +15,7 @@
   padding: 25px;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .help_item {
@@ -24,6 +25,9 @@
   border-radius: 30px;
   padding: 20px;
   margin-bottom: 20px;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .hr {
@@ -44,7 +48,12 @@
 }
 
 @media screen and (max-width: 576px) {
-  .cart_block {
-    margin: 15px;
+  .help_item {
+    font-size: 16px;
+  }
+
+  .total_price {
+    margin-top: 10px;
+    font-size: 20px;
   }
 }

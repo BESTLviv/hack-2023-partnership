@@ -37,7 +37,7 @@ const Header = () => {
         </Box>
               <Button linkTo="#" text="Стати партнером"/>
       </Box>
-      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen} >
         <DrawerContent className={style.drawer_content}>
           <DrawerBody className={style.drawer_body}>
             {menuItems.map((item) => (

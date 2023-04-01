@@ -1,5 +1,5 @@
 .header {
-  margin: 20px 0;
+  padding: 20px 0;
   .header_desktop {
     justify-content: space-between;
     padding: 20px;
@@ -9,7 +9,7 @@
   }
 
   .header_mobile {
-    margin: 10px 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -35,6 +35,9 @@
   text-align: start;
   margin: 20px 10px;
   /* identical to box height */
-
   color: #ffffff;
+}
+
+.drawer_link:focus {
+  outline: none;
 }
