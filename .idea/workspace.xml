@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="">
+    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="fixed carousel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChartInfo/ChartInfo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChartInfo/ChartInfo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChartInfo/RangeElement/RangeElement.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChartInfo/RangeElement/RangeElement.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/CarouselSection/CaroselSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/CarouselSection/CaroselSection.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/Carousel/Carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/Carousel/Carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/StatisticSection/StatisSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/StatisticSection/StatisSection.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,14 @@
       <workItem from="1679833971931" duration="1127000" />
       <workItem from="1680349093360" duration="2754000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed carousel">
+      <created>1680377927357</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680377927357</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed carousel" />
   </component>
 </project>

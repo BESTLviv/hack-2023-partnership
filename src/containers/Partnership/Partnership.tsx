@@ -21,7 +21,7 @@ const Partnership = () => {
          <CarouselSection />
         <Offer />
         <Cart />
-        {/* <StatisticSection/> */}
+         <StatisticSection/>
         <Team />
         <Feedback />
         <QA />

@@ -3,9 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .statisticContentWrapper{
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   gap: 40px;

@@ -1,4 +1,5 @@
 
+
 .rangeElementContainer:not(:last-child) {
   margin-bottom: 45px;
 }
@@ -16,6 +17,7 @@
 
   .topTitleContainer {
     display: flex;
+    margin-left: 10px;
     justify-content: center;
   }
 
