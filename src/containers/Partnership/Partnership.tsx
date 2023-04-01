@@ -9,6 +9,7 @@ import Team from '../../components/team/Team';
 import StatisticSection from '../../scenes/StatisticSection/StatisticSection';
 import Footer from './components/Footer';
 import ProjectOrganizator from '../../components/ProjectOrganizator/ProjectOrganizator';
+import Feedback from '../../components/feedback/Feedback';
 
 const Partnership = () => {
   return (
@@ -23,6 +24,8 @@ const Partnership = () => {
       <Cart />
       <StatisticSection/>
       <Team />
+      <StatisticSection />
+      <Feedback />
       <Footer />
     </div>
   );
