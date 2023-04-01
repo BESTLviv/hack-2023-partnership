@@ -1,7 +1,9 @@
 .teammate {
   width: 350px;
   padding: 0 15px;
-  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teammate_avatar,
@@ -18,6 +20,16 @@
 }
 
 .teammate_contacts {
+  display: flex;
+  flex-direction: column;
   font-family: 'Play', sans-serif;
   font-weight: 700;
+
+}
+
+.contactBody{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
 }
