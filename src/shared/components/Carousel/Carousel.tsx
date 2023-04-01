@@ -39,7 +39,7 @@ const Carousel: FC<ICarouselProps> = ({ cards }) => {
       />
       <Slider {...settings}>
         {cards?.map((card, index) => (
-          <Image boxSize="full" key={index} objectFit="cover" src={card.image} />
+          <Image maxWidth={'100%'} boxSize="full" key={index} objectFit="cover" src={card.image} />
         ))}
       </Slider>
     </div>

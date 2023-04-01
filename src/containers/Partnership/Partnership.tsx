@@ -18,7 +18,7 @@ const Partnership = () => {
       <Header />
       <div className={styles.contentWrapper}>
         <Hero />
-        {/* <CarouselSection /> */}
+         <CarouselSection />
         <Offer />
         <Cart />
         {/* <StatisticSection/> */}
