@@ -10,7 +10,7 @@ export interface BestDataProps {
 // eslint-disable-next-line react/prop-types
 const BestData: React.FC<BestDataProps> = ({count, subject}) => {
   return (
-    <Flex flexDirection={'column'} width={160}>
+    <Flex flexDirection={'column'} w="100%">
       <Box className={style.bestdata_count}>{count}</Box>
       <Box className={style.bestdata_subject}>{subject}</Box>
     </Flex>

@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 630px) {
   .qa_item {
-    width: 400px;
+    width: 100%;
   }
 
   .qa_item:hover {
@@ -56,8 +56,12 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 568px) {
   .qa_item {
-    width: 300px;
+    width: 100%;
+  }
+  .qa_item_question, .qa_item_answer {
+    font-size: 14px;
+    font-weight: 400;
   }
 }

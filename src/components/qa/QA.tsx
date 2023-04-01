@@ -7,7 +7,7 @@ import QAItem from './QAItem';
 
 const QA: React.FC = () => {
   return (
-    <Flex className={style.qa_block} flexDirection={'column'} alignItems={'center'}>
+    <Flex className={style.qa_block} flexDirection={'column'} alignItems={'center'} w={'100%'}>
       <HeaderText text="Q/A" />
       <div className={style.qa_qas}>
         <QAItem

@@ -7,10 +7,20 @@
 
 .bestdata_count {
   font-weight: normal;
-  font-size: 42px;
+  font-size: 54px;
 }
 
 .bestdata_subject {
-  font-weight: bold;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 30px;
 }
+
+@media screen and (max-width: 576px) {
+  .bestdata_count {
+    font-size: 28px;
+  }
+  .bestdata_subject {
+    font-size: 16px;
+  }
+}
+  

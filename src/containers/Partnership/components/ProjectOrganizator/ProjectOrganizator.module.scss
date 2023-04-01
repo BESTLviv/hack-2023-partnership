@@ -2,11 +2,81 @@
   font-family: Play, serif;
   font-size: 16px;
   color: white;
-  margin-left: 20px;
+  margin-left: 40px;
   text-align: left;
 }
 
 .projorg_BEST {
   font-size: 20px;
   font-weight: bold;
+}
+
+.topWrapper {
+  margin-top: 100px;
+  max-width: 800px;
+}
+
+.mapWrapper {
+  display: flex;
+  position: relative;
+  max-width: 800px;
+  justify-content: flex-start;
+  // max-width: 100%;
+  // width: 800px;
+}
+
+.numberWrapper {
+  position: absolute;
+}
+
+.mapImage {
+  width: 46.6vw;;
+  height: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .mapImage {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mapWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .numberWrapper {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .emptyDiv {
+    display: none;
+  }
+
+  .mapImage {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .bestLogo {
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+  }
+
+  .projorg_best_description {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .topWrapper {
+    margin-top: 60px;
+  }
 }

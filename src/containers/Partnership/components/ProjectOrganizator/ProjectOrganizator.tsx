@@ -15,23 +15,24 @@ const ProjectOrganizator: React.FC = () => {
   ]; 
 
   return (
-    <>
+    <div>
       <HeaderText text="Організатор проєкту"/>
-      <Flex flexDirection={'column'} alignItems={'center'} marginTop="75px">
-        <Flex flexDirection={['column', 'column', 'row']} justifyContent={'center'} alignItems={'center'} marginBottom="75px">
-          <img src={BestLogo} alt="BEST Logo" style={{background: 'transparent', display: 'block'}} width={250}/>
+      <Flex flexDirection={'column'} alignItems={'center'}>
+        <Flex flexDirection={['column', 'column', 'row']} justifyContent={'center'} alignItems={'center'} marginBottom="75px" className={style.topWrapper}>
+          <img src={BestLogo} alt="BEST Logo" style={{background: 'transparent', display: 'block'}} className={style.bestLogo}/>
           <Box className={style.projorg_best_description}>
             <span className={style.projorg_BEST}>BEST</span> — це неприбуткова громадська організація, яка об’єднує студентів технічних спеціальностей для забезпечення обміну знаннями та співпраці компаній, університетів та студентів Європи.
           </Box>
         </Flex>
-        <Flex flexDirection={'row'} position="relative" width={'800px'}>
-          <img src={EuropeMap} alt="Europe Map" width={550}/>
-          <Flex flexDirection={'row'} position={'absolute'} top={'50px'} left="50%">
+        <Flex className={style.mapWrapper} w={'100%'}>
+          <img src={EuropeMap} alt="Europe Map" className={style.mapImage}/>
+          <Flex flexDirection={'row'} className={style.numberWrapper} top={'50px'} left="50%">
             {bestData.map((bd, i) => <BestData key={i} count={bd.count} subject={bd.subject}/>)}  
           </Flex>
+          <div className={style.emptyDiv}></div>
         </Flex>
       </Flex>
-    </>
+    </div>
   );
 }
 

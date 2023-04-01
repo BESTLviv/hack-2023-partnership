@@ -19,16 +19,13 @@ const Partnership = () => {
       <div className={styles.contentWrapper}>
         <Hero />
         {/* <CarouselSection /> */}
-        {/* <HeaderText text={'для партнерів це:'} /> */}
         <Offer />
         <Cart />
         {/* <StatisticSection/> */}
         <Team />
-        {/* <StatisticSection /> */}
         <Feedback />
         <QA />
-        {/* <ProjectOrganizator /> */}
-
+        <ProjectOrganizator />
       </div>
       <Footer />
     </div>
