@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styles from './ChartInfo.module.scss'
-import RangeElement from "./RangeElement";
+import RangeElement from './RangeElement';
 
 const ChartInfo = () => {
     return (
