@@ -1,16 +1,30 @@
 import './App.scss';
-import Partnership from './containers/Partnership';
 
-import { ChakraProvider } from '@chakra-ui/react'
+import {ChakraProvider} from '@chakra-ui/react'
+import Partnership from "./containers/Partnership";
+import SmothScroll from "./components/SmothScroll/SmothScroll";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
-  return (
-    <ChakraProvider>
-      <div className='App'>
-        <Partnership />
-      </div>
-    </ChakraProvider>
-  );
+
+    return (
+        <ChakraProvider>
+
+
+            <ParticlesBackground>
+
+
+                <div className='App'>
+                    <SmothScroll>
+                        <Partnership/>
+                    </SmothScroll>
+
+                </div>
+            </ParticlesBackground>
+
+
+        </ChakraProvider>
+    );
 }
 
 export default App;

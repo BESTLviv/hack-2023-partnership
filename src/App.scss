@@ -105,10 +105,28 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
+a, img, button, input, {
+  pointer-events: all;
+
 }
 
+body {
+  line-height: 1;
+  overscroll-behavior-y: none;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
 
 // * {
 //   outline: 1px solid #13E974;
@@ -136,7 +154,6 @@ table {
 .App {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  background-color: black;
   color: #ffffff;
   outline: 1px solid #13E974;
 }
