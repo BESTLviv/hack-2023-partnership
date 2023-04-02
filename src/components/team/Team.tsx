@@ -6,10 +6,12 @@ import SofiaLevSvg from '../../assets/images/team/sofia_lev.svg';
 import HeaderText from '../HeaderText';
 
 import Teammate from './Teammate';
+import AnimationWrapper from "../../Animations";
 
 const Team: React.FC = () => {
     return (
-        <div>
+        <AnimationWrapper delay={0.5} duration={1} animationType={'fadeIn'}>
+
             <HeaderText text="Контакти"/>
             <Flex flexDirection={'row'} gap={'100px'} alignItems={'stretch'} justifyContent={'center'}
                   flexWrap={'wrap'} mt="40px">
@@ -35,7 +37,8 @@ const Team: React.FC = () => {
                     email="bohdanvivchar.best@gmail.com"
                 />
             </Flex>
-        </div>
+        </AnimationWrapper>
+
     );
 }
 
