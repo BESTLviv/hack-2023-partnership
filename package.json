@@ -23,6 +23,7 @@
     "react-slick": "^0.29.0",
     "react-smooth-scrollbar": "^8.0.6",
     "react-tsparticles": "^2.9.3",
+    "react-waypoint": "^10.3.0",
     "sass": "^1.60.0",
     "smooth-scrollbar": "^8.8.3",
     "smooth-scrollbar-react": "^2.4.1",

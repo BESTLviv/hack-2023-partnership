@@ -31,14 +31,16 @@ const Header = () => {
                         <HamburgerIcon w={30} h={30} onClick={onOpen} className={style.hamburger_icon}/>
                     </Box>
                     <Box display={{base: 'none', md: 'flex'}} className={style.header_desktop}>
-                        <Box display={'flex'} alignItems="center">
+                        <div style={{display: 'flex', alignItems: 'center', gap: '20px'}}>
+
                             {menuItems.map((item) => (
                                 <Box key={item.href} as="a" href={item.href} p={2}>
                                     {item.label}
                                 </Box>
                             ))}
-                        </Box>
-                        <Button linkTo="#" text="Стати партнером"/>
+                        </div>
+
+                        <Button text="Стати партнером"/>
                     </Box>
                     <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
                         <DrawerContent className={style.drawer_content}>

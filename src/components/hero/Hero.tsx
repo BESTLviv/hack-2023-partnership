@@ -7,16 +7,16 @@ import AnimationWrapper from "../../Animations";
 const Hero: React.FC = () => {
     return (
         <AnimationWrapper className={style.hero} duration={1} animationType={'zoomIn'}>
+            <div>
 
-            <div>
-                <IconMenu className={style.hack_logo}/>
+                <div>
+                    <IconMenu className={style.hack_logo}/>
+                </div>
+                <div className={style.event_date}>
+                    27-28 травня
+                </div>
             </div>
-            <div className={style.event_date}>
-                27-28 травня
-            </div>
-            <div>
-                <a href="#" className={style.become_partner_btn}>Стати партнером</a>
-            </div>
+
         </AnimationWrapper>
 
     );

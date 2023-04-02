@@ -4,6 +4,7 @@ import styles from './Form.module.scss';
 import RoundWhiteCheckbox from './RoundWhiteCheckbox';
 import {resetForm, togglePartner, updateCompanyName, updateEmail} from "../../redux/slices/formSlice/formSlice";
 import {RootState} from "../../redux/store";
+import Button from "../button/Button";
 
 
 const CustomForm = () => {
@@ -46,9 +47,8 @@ const CustomForm = () => {
                 value={email}
                 onChange={(event) => dispatch(updateEmail(event.target.value))}
             />
-            <button type="submit" className={styles.formButton}>
-                оформити
-            </button>
+            <Button text={'оформити'} type="submit" className={styles.formButton}/>
+
         </form>
     );
 };
