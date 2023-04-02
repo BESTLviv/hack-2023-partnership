@@ -43,13 +43,13 @@ const Offer = () => {
     ];
 
     return (
-        <AnimationWrapper delay={0.5} duration={1} animationType={'fadeIn'}>
 
 
-            <div className={styles.offer_wrapper}>
+            <AnimationWrapper animationType={'fadeIn'} duration={1} delay={0.5} className={styles.offer_wrapper}>
                 <HeaderText text="Пропозиція"/>
                 <div className={styles.offer_empty_space}/>
-                <Package title={offerObj.title} list={offerObj.list} price={offerObj.price} isMain/>
+                    <Package title={offerObj.title} list={offerObj.list} price={offerObj.price} isMain/>
+
                 <p className={styles.offer_text_mobile}>
                     Партнерам попередніх хакатонів -5%
                     <br/>
@@ -68,8 +68,7 @@ const Offer = () => {
                         />
                     ))}
                 </div>
-            </div>
-        </AnimationWrapper>
+            </AnimationWrapper>
 
     );
 };

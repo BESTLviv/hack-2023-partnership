@@ -7,8 +7,10 @@ interface AnimationWrapperProps {
     duration?: number;
     delay?: number;
     easing?: [number, number, number, number];
-    className?: string
+    className?: string;
+    alwaysVisible?: boolean
 }
+
 const fadeInVariants: Variants = {
     hidden: {opacity: 0},
     visible: {opacity: 1},
@@ -93,6 +95,7 @@ const AnimationWrapper = (
         duration = 0.3,
         delay = 0,
         easing = [0.42, 0, 0.58, 1],
+        alwaysVisible,
         ...rest
     }: AnimationWrapperProps) => {
     const variants = getVariants(animationType);
@@ -101,7 +104,8 @@ const AnimationWrapper = (
         <motion.div
             {...rest}
             initial="hidden"
-            whileInView="visible"
+            whileInView='visible'
+            animate={alwaysVisible && 'visible'}
             viewport={{once: false}}
             transition={{duration, delay, ease: easing}}
             variants={variants}

@@ -8,16 +8,13 @@ import AnimationWrapper from "../../Animations";
 
 const StatisticSection = () => {
     return (
-        <AnimationWrapper duration={1} animationType={'fadeIn'}>
-
-            <div className={styles.statisticSectionContainer}>
+            <AnimationWrapper duration={1} animationType={'fadeIn'} className={styles.statisticSectionContainer}>
                 <HeaderText text={'Статистика '}/>
                 <div className={styles.statisticContentWrapper}>
                     <SocialMediaCard/>
                     <ChartInfo/>
                 </div>
-            </div>
-        </AnimationWrapper>
+            </AnimationWrapper>
 
     );
 };

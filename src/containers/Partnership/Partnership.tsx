@@ -11,27 +11,35 @@ import ProjectOrganizator from './components/ProjectOrganizator/ProjectOrganizat
 import Feedback from '../../components/feedback/Feedback';
 import styles from './Partnership.module.scss';
 import ForPartners from './components/ForPartners';
+import SmothScroll from "../../components/SmothScroll/SmothScroll";
 
 const Partnership = () => {
-  return (
-    <>
-      <Header />
-      <div className={styles.contentWrapper}>
-        <Hero />
-        <CarouselSection />
-        <ForPartners />
-        <StatisticSection />
-        {/* нас підтримували */}
-        <Feedback />
-        <Offer />
-        <Cart />
-        <QA />
-        <ProjectOrganizator />
-        <Team />
-      </div>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+
+                <Header/>
+
+
+
+                <SmothScroll>
+                    <div className={styles.contentWrapper}>
+                        <Hero/>
+                        <CarouselSection/>
+                        <ForPartners/>
+                        <StatisticSection/>
+                        {/* нас підтримували */}
+                        <Feedback/>
+                        <Offer/>
+                        <Cart/>
+                        <QA/>
+                        <ProjectOrganizator/>
+                        <Team/>
+                    </div>
+                </SmothScroll>
+            <Footer/>
+
+        </>
+    );
 };
 
 export default Partnership;

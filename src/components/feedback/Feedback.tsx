@@ -5,7 +5,7 @@ import AnimationWrapper from "../../Animations";
 const Feedback = () => {
 
     return (
-        <AnimationWrapper delay={0.5} duration={1} animationType={'rotateIn'}>
+        <AnimationWrapper delay={0.5} duration={1} animationType={'slideUp'}>
 
 
             <div className={styles.feedbackContainer}>

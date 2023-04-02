@@ -12,13 +12,8 @@ function App() {
 
 
             <ParticlesBackground>
-
-
                 <div className='App'>
-                    <SmothScroll>
                         <Partnership/>
-                    </SmothScroll>
-
                 </div>
             </ParticlesBackground>
 

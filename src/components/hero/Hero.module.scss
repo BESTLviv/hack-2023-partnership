@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 88px;
+  margin-top: 200px;
 }
 
 .hack_logo {
@@ -32,7 +32,7 @@
 }
 
 .become_partner_btn:active {
-  box-shadow: 
+  box-shadow:
     inset 0px 55px 25px -30px rgba(45,171,102,1),
     0px 0px 20px 7px rgb(45,171,102);
 }
@@ -55,7 +55,7 @@
   }
 
   .become_partner_btn:active {
-    box-shadow: 
+    box-shadow:
       inset 0px 50px 25px -30px rgba(45,171,102,1),
       0px 0px 20px 7px rgb(45,171,102);
   }

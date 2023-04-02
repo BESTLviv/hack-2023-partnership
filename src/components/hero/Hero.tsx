@@ -6,7 +6,7 @@ import AnimationWrapper from "../../Animations";
 
 const Hero: React.FC = () => {
     return (
-        <AnimationWrapper className={style.hero} duration={1}  animationType={'zoomIn'}>
+        <AnimationWrapper className={style.hero} duration={1} animationType={'zoomIn'}>
 
             <div>
                 <IconMenu className={style.hack_logo}/>
