@@ -13,8 +13,9 @@ const Team: React.FC = () => {
         <AnimationWrapper delay={0.5} duration={1} animationType={'fadeIn'}>
 
             <HeaderText text="Контакти"/>
-            <Flex flexDirection={'row'} gap={'100px'} alignItems={'stretch'} justifyContent={'center'}
-                  flexWrap={'wrap'} mt="40px">
+            <div style={{marginTop: '40px'}}/>
+            <Flex id={'contacts'} flexDirection={'row'} gap={'100px'} alignItems={'stretch'} justifyContent={'center'}
+                  flexWrap={'wrap'}>
                 <Teammate
                     avatarSrc={AnnaHukSvg}
                     name="Анна Гук"
@@ -37,9 +38,11 @@ const Team: React.FC = () => {
                     email="bohdanvivchar.best@gmail.com"
                 />
             </Flex>
+
         </AnimationWrapper>
 
     );
 }
 
-export default Team;
+export default Team
+;

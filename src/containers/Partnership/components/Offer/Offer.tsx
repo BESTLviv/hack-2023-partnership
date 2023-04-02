@@ -61,7 +61,8 @@ const Offer = () => {
     return (
 
 
-        <AnimationWrapper animationType={'fadeIn'} duration={1} delay={0.5} className={styles.offer_wrapper}>
+        <AnimationWrapper id={'orders'} animationType={'fadeIn'} duration={1} delay={0.5}
+                          className={styles.offer_wrapper}>
             <HeaderText text="Пропозиція"/>
             <div className={styles.offer_empty_space}/>
             <Package isSelected={isOfferSelected(offerObj)}

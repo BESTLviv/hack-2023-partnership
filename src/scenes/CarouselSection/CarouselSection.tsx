@@ -23,7 +23,7 @@ const cards: ICard[] = [
 const CarouselSection = () => {
 
     return (
-        <AnimationWrapper duration={2} animationType={'slideUp'} className={styles.carouselSectionContainer}>
+        <AnimationWrapper id={'aboutUs'} duration={2} animationType={'slideUp'} className={styles.carouselSectionContainer}>
 
             <div className={styles.carouselItem}>
                 <Carousel cards={cards}/>

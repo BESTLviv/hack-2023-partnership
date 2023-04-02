@@ -9,6 +9,7 @@ interface AnimationWrapperProps {
     easing?: [number, number, number, number];
     className?: string;
     alwaysVisible?: boolean
+    id?:string
 }
 
 const fadeInVariants: Variants = {

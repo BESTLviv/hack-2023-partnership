@@ -8,9 +8,9 @@ import AnimationWrapper from "../../Animations";
 
 const QA: React.FC = () => {
     return (
-        <AnimationWrapper delay={0.5} duration={1} animationType={'fadeIn'}>
+        <AnimationWrapper id={'questions'}  delay={0.5} duration={1} animationType={'fadeIn'}>
 
-            <Flex className={style.qa_block} flexDirection={'column'} alignItems={'center'} w={'100%'}>
+            <Flex  className={style.qa_block} flexDirection={'column'} alignItems={'center'} w={'100%'}>
                 <HeaderText text="Q/A"/>
                 <div className={style.qa_qas}>
                     <QAItem
