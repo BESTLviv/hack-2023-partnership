@@ -1,6 +1,7 @@
 import styles from './Package.module.scss';
 import InfoButton from '../InfoButton';
 import SelectableCard from "../../../../../../components/SelectedCard/SelectedCard";
+import {IOffer, ordersId} from "../../../../../../redux/slices/orderSlice/orderSlice";
 
 
 type Props = {
@@ -8,14 +9,16 @@ type Props = {
     list: string[];
     price: number;
     isMain?: boolean;
+    isSelected: boolean;
+    onClick: (id: IOffer) => void
 };
 
-const Package = ({title, list, price, isMain}: Props) => {
+const Package = ({title, isSelected, list, price, isMain, onClick}: Props) => {
     return (
         <>
 
-            <SelectableCard style={{pointerEvents: 'all'}}
-                 className={`${styles.package_wrapper} ${isMain && styles.package_wrapper_main}`}>
+            <SelectableCard isSelected={isSelected} onClick={onClick} style={{pointerEvents: 'all'}}
+                            className={`${styles.package_wrapper} ${isMain && styles.package_wrapper_main}`}>
                 <p className={styles.package_title}>{title}</p>
                 <div className={styles.package_info_button}><InfoButton onClick={() => console.log('clicked')}/>
                 </div>

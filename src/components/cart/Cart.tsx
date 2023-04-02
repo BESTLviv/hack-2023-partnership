@@ -3,19 +3,28 @@ import CustomForm from './CustomForm';
 import styles from './Cart.module.scss';
 import HeaderText from '../HeaderText';
 import AnimationWrapper from "../../Animations";
+import {useAppSelector} from "../../redux/store";
+import {selectedForm} from "../../redux/slices/formSlice/formSlice";
+import {getTotalPrice} from "../../redux/slices/formSlice/utils/getTotalPrice";
 
 const Left = () => {
+    const selectedOrders = useAppSelector((state) => state.order.selectedOrders);
+    const sum = getTotalPrice()
+
     return (
         <Flex direction={'column'} h={'100%'} justifyContent={'space-between'}>
             <div>
-                <div className={styles.help_item}>Базовий пакет</div>
-                <div className={styles.help_item}>Get to know</div>
-                {/* <div className={styles.help_item}>Get to know</div> */}
+                {
+                    selectedOrders.map(order => (
+                        <div key={order.id} className={styles.help_item}>{order.title}</div>
+
+                    ))
+                }
             </div>
 
             <div>
                 <hr className={styles.hr}/>
-                <p className={styles.total_price}>475$</p>
+                <p className={styles.total_price}>{sum}$</p>
             </div>
         </Flex>
     );
@@ -28,7 +37,6 @@ const Right = () => {
 const Cart = () => {
     return (
         <AnimationWrapper delay={0.5} duration={1} animationType={'slideUp'}>
-
 
             <HeaderText text='Кошик'/>
             <Grid
