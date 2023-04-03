@@ -1,6 +1,6 @@
 <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_779_9)">
-<circle cx="36.5" cy="36.5" r="15" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
+<circle cx="36.5" cy="36.5" r="15" stroke="white" stroke-width="3" />
 </g>
 <g filter="url(#filter1_d_779_9)">
 <line x1="27" y1="36.5" x2="48" y2="36.5" stroke="white" stroke-width="3"/>

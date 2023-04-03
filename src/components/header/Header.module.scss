@@ -48,8 +48,9 @@
   margin: 20px 10px;
   /* identical to box height */
   color: #ffffff;
+  outline: none;
 }
 
-.drawer_link:focus {
+.drawer_link > a:focus {
   outline: none;
 }

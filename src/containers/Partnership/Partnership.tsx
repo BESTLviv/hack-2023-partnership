@@ -18,12 +18,14 @@ import Companies from './components/Companies';
 
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import AudiencePopup from './components/AudiencePopup';
 
 
 
 
 const Partnership = () => {
   const popupActive = useSelector((state: RootState) => state.order.popupTitle);
+  const audiencePopupActive = useSelector((state: RootState) => state.order.audiencePopup);
 
 
   return (
@@ -47,6 +49,7 @@ const Partnership = () => {
       </div>
       </SmothScroll>
       {popupActive ? <OfferPopup /> : null }
+      {audiencePopupActive ? <AudiencePopup /> : null}
       <Footer />
     </div>
   )};

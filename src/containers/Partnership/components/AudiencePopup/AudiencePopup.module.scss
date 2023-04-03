@@ -1,0 +1,102 @@
+.popupWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.popupContent {
+  background: linear-gradient(119.88deg, rgba(45, 171, 102, 0.97) -28.82%, rgba(5, 5, 5, 0.97) 98.57%);
+  border-radius: 30px;
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 85vh;
+  overflow-y: scroll;
+  z-index: 999;
+  pointer-events: all;
+  position: absolute;
+  padding: 60px 60px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Play;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  cursor: auto;
+}
+
+.popupContent::-webkit-scrollbar {
+  display: none;
+}
+
+.closeBtnWrapper {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 32px;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.contentTitle {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contentText {
+  text-align: left;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .contentTitle {
+    font-size: 18px;
+  }
+
+  .contentText {
+    font-size: 18px;
+  }
+
+  .contentWrapper {
+    grid-template-columns: 1fr;
+  }
+    
+  .popupContent {
+    padding: 20px 10px;
+    height: 85vh;
+  }
+
+  .closeBtnWrapper {
+    position: fixed;
+    top: 7%;
+    left: 7%;
+    right: auto;
+  }
+  
+}

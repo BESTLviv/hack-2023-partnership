@@ -14,6 +14,7 @@ export interface IOffer {
 interface OrderState {
     selectedOrders: IOffer[] // Array of selected orders
     popupTitle: ordersId | null; 
+    audiencePopup: boolean;
 }
 
 const initialState: OrderState = {
@@ -32,6 +33,7 @@ const initialState: OrderState = {
         ],
     }],
     popupTitle: null,
+    audiencePopup: false,
 };
 
 const orderSlice = createSlice({
@@ -56,10 +58,13 @@ const orderSlice = createSlice({
         setPopupTitle(state, action: PayloadAction<ordersId | null>) {
             state.popupTitle = action.payload;
         },
+        setAudiencePopup(state, action: PayloadAction<boolean>) {
+            state.audiencePopup = action.payload;
+        }
     },
 });
 
-export const { selectOrder, setPopupTitle } = orderSlice.actions;
+export const { selectOrder, setPopupTitle, setAudiencePopup } = orderSlice.actions;
 export const selectedOrders = (state: RootState) => state.order
 export default orderSlice.reducer;
 
