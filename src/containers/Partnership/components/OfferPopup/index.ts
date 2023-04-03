@@ -1,3 +1,3 @@
-import OfferPopup from "./OfferPopup";
+import OfferPopup from './OfferPopup';
 
 export default OfferPopup;

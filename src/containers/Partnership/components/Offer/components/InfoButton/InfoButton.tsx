@@ -1,5 +1,5 @@
 type Props = {
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLElement>) => void;
 };
 import InfoButtonIcon from '../../../../../../assets/images/icons/infoButton.svg';
 import styles from './InfoButton.module.scss';

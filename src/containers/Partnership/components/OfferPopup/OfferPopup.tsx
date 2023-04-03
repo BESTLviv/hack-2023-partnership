@@ -1,45 +1,119 @@
 import { useMemo } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../../redux/store';
 import styles from './OfferPopup.module.scss';
+import ArrowIcon from '../../../../assets/icons/arrow.svg';
 
-type Props = {
-  offer: {
+import { ordersId, setPopupTitle } from '../../../../redux/slices/orderSlice/orderSlice';
+
+type OffersType = {
+  [key in ordersId]: {
     title: string;
     text: string;
   }[];
-  offerTitle: string;
 }
 
-const OfferPopup = ({offer, offerTitle}: Props) => {
+const OFFERS: OffersType = {
+  'Базовий пакет': [
+    {
+      title: 'Логотип компанії на бренд-волі та на сайті проєкту',
+      text: 'Розміщення логотипа партнера на бренд-волі проєкту, а також на сайті Хакатону',
+    },
+    {
+      title: 'Промоція в соціальних мережах (інформація про компанію)',
+      text: 'Розміщення інформації про компанію в соціальних мережах: \n 1 згадка в Instagram story \n 1 пост в LinkedIn \n Пост дайджест у Telegram каналі',
+    },
+    {
+      title: 'Логотип та згадка про компанію у постпроєктному відео',
+      text: 'Додавання логотипа компанії на відео, яке буде створено та виставлено в інстаграмі після успішного завершення Хакатону. Вказівка на компанію та її внесок у захід також буде присутня в цьому відео.',
+    },
+    {
+      title: 'Участь у нетворкінгу',
+      text: 'Нетворкінг є засобом зустрічі між учасниками, організаторами та представниками компанії в неформальній обстановці, що може стати відмінною нагодою для студентів знайти роботу або стажування, а для компаній - надати ці можливості. Час проведення орієнтовно година.',
+    },
+  ],
+  Initiator: [
+    {
+      title: 'Надання ментора та судді',
+      text: 'Ментор - це людина, яка має досвід та знання в галузі, в якій працює команда. Він допомагає учасникам розв\'язати проблеми, які виникають під час розробки проєкту. \n Суддя - це людина, що оцінює проєкти, які були розроблені командами під час хакатону. Він оцінює якість реалізації, відповідність тематиці хакатону, інноваційність, практичну цінність та інші параметри.',
+    },
+    {
+      title: 'Проведення воркшопу або тренінгу',
+      text: 'Воркшоп - це тип інтерактивного навчання, де учасники виконують низку навчальних дій. Наприклад, це може бути демонстраційний показ, практичне заняття або дискусійний клуб. \n Тренінг - це певний вид навчання, який спрямований на підвищення рівня знань та навичок учасників. Його головною метою є навчання технік, прийомів та стратегій, які можуть бути корисними для вирішення конкретних завдань. Наприклад, тренінг з технік комунікації, управління проєктами, web технологій і т.д..',
+    },
+    {
+      title: 'Лого на футболках',
+      text: 'На спинах футболок всіх присутніх на заході людей, які вони отримають при відкритті хакатону, буде надруковано лого Вашої та інших компаній',
+    },
+    {
+      title: 'Номінація від компанії',
+      text: 'Ви можете обрати власну номінацію на змаганнях, яка буде закріплена за Вашою компанією. Переможця у ній визначає представник компанії та нагороджує призом. Номінація може стосуватись використання певних технологій або інших особливостей роботи команди на Ваш вибір.',
+    },
+    {
+      title: 'Пост про компанію в Instagram',
+      text: 'Ми опублікуємо пост про вашу компанію на нашій сторінці в Instagram, який буде доступний назавжди. В цьому пості ми надамо інформацію про вашу компанію та зазначимо, що ви є нашим основним партнером на цьому хакатоні.',
+    }
+  ],
+  'Recruiter': [
+    {
+      title: 'Розсилка вакансій у Telegram боті',
+      text: 'Піврічна розсилка вакансій та активностей(курсів, стажувань) від компанії у Telegram боті.',
+    },
+    {
+      title: 'Доступ до бази CV учасників',
+      text: 'Це можливість отримати доступ до бази даних CV учасників, що пройшли відбір на хакатон',
+    }
+  ],
+  'Get to know': [
+    {
+      title: 'World cafe',
+      text: 'Це метод взаємодії групи людей, спрямований на спільне творення та обмін ідеями шляхом розмов на заздалегідь визначену тему в невимушеній атмосфері. Компанії буде виділено 15 хвилин на взаємодію з учасниками.',
+    },
+    {
+      title: 'Інтерактивні Instagram story',
+      text: 'Спільно з нашою командою буде створено контент для промоції Instagram story на сторінці організації*. Приклади інтерактиву: рубрика “Питання-відповідь”; рубрика “Як проходить день нашого працівника” та інше. ',
+    },
+    {
+      title: 'Завдання дня',
+      text: 'команда Хакатону розмістить креативне завдання від імені Вашої компанії у наш Instagram. Приклади завдань: придумати гасло для компанії, намалювати альтернативне лого, створити оригінальне фото на певну тематику та інше. Опісля ми оберемо переможця, який матиме змогу отримати нагороду Ваш мерч під час заходу.',
+    },
+  ]
+}
 
-  const contentForDesktop = useMemo(() => {
-    return offer.reduce((acc, item) => {
+
+const OfferPopup = () => {
+  const offerTitle = useSelector((state: RootState) => state.order.popupTitle);
+  const dispatch = useDispatch();
+
+  if (!offerTitle) return null;
+
+  const offer = useMemo(() => {
+    return OFFERS[offerTitle].reduce((acc, item) => {
       acc.push(item.title);
       acc.push(item.text);
       return acc;
-    }
-    , [] as string[]);
-  }, [offer]);
+    }, [] as string[]);
+  }, [offerTitle]);
+
+
+  const closePopup = () => {
+    document.body.style.overflow = '';
+    dispatch(setPopupTitle(null));
+  }
 
 
   return (
-  <div className={styles.popupWrapper}>
-    <div className={styles.popupContent}>
-      <div className={styles.offerTitle}>{offerTitle}</div>
-      <div className={styles.desktopWrapper}>
-        {contentForDesktop.map((content, index) => {
-          return index % 2 === 0 ? (<div className={styles.boxTitle} key={index}>{content}</div>) : (<div className={styles.boxText} key={index}>{content}</div>)
-        })}
+    <div className={styles.popupWrapper} onClick={closePopup}>
+      <div className={styles.popupContent}>
+        <div onClick={closePopup} className={styles.closeBtnWrapper}><img src={ArrowIcon} className={styles.arrowIcon} /></div>
+        <div className={styles.offerTitle}>{offerTitle}</div>
+        <div className={styles.desktopWrapper}>
+          {offer.map((content, index) => {
+            return index % 2 === 0 ? (<div className={styles.boxTitle} key={index}>{content}</div>) : (<div className={styles.boxText} key={index}>{content}</div>)
+          })}
+        </div>
       </div>
-      {/* <div className={styles.mobileWrapper}>
-        {offer.map((content, index) => (
-          <>
-           <div className={styles.mobileBoxTitle} key={index}>{content.title}</div>
-           <div className={styles.mobileBoxText} key={index}>{content.text}</div>
-          </>
-        ))}
-      </div> */}
-    </div>
-  </div>);
+    </div>);
 }
 
 export default OfferPopup;
