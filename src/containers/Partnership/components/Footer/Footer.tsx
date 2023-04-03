@@ -12,18 +12,18 @@ const Footer = () => {
             <div className={styles.footer}>
                 <p className={styles.year}>2023</p>
                 <img src={BestLogo} alt="best logo" className={styles.bestLogo}/>
-                <div style={{display:'flex', flex: 1, justifyContent:"flex-end"}}>
+                <div style={{display: 'flex', flex: 1, justifyContent: "flex-end"}}>
                     <div className={styles.socials}>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
-                            <img src={Facebook} alt="facebook"/>
+                        <a href="https://www.facebook.com/BEST.Lviv" rel="noopener noreferrer" target="_blank">
+                            <img src={Facebook}  alt="instagram"/>
                         </a>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="https://instagram.com/best_lviv?igshid=YmMyMTA2M2Y=" rel="noopener noreferrer" target="_blank">
                             <img src={Inst} alt="instagram"/>
                         </a>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.linkedin.com/mwlite/company/bestlviv" rel="noopener noreferrer" target="_blank">
                             <img src={In} alt="linked"/>
                         </a>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="https://t.me/bestlviv" rel="noopener noreferrer" target="_blank">
                             <img src={Telegram} alt="telegram"/>
                         </a>
                     </div>
