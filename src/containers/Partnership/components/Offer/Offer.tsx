@@ -2,8 +2,8 @@ import Package from './components/Package';
 import HeaderText from '../../../../components/HeaderText';
 import styles from './Offer.module.scss';
 import AnimationWrapper from '../../../../Animations';
-import {useAppDispatch, useAppSelector} from '../../../../redux/store';
-import {IOffer, selectOrder} from '../../../../redux/slices/orderSlice/orderSlice';
+import { useAppDispatch, useAppSelector } from '../../../../redux/store';
+import { IOffer, selectOrder } from '../../../../redux/slices/orderSlice/orderSlice';
 
 const Offer = () => {
     const offerObj: IOffer = {
@@ -12,12 +12,12 @@ const Offer = () => {
         price: 300,
         list: [
             'Логотип компанії на бренд-волі та на сайті проєкту',
-            'Промоція в соціальних мережах',
-            'Фото та відео звіт',
-            'Логотип та згадка про компанію у пост відео',
-            'Транслювання відео компанії під час Хакатону',
+            'Промоція в соціальних мережах (інформація про компанію)',
+            //  'Фото та відео звіт',
+            'Логотип та згадка про компанію у постпроєктному відео',
+            //   'Транслювання відео компанії під час Хакатону',
             'Участь у нетворкінгу',
-            'Участь в благодійному зборі-розіграші для ЗСУ (За вашим бажанням)',
+            //   'Участь в благодійному зборі-розіграші для ЗСУ (За вашим бажанням)',
         ],
     };
 
@@ -62,21 +62,21 @@ const Offer = () => {
 
 
         <AnimationWrapper id={'orders'} animationType={'fadeIn'} duration={1} delay={0.5}
-                          className={styles.offer_wrapper}>
-            <HeaderText text="Пропозиція"/>
-            <div className={styles.offer_empty_space}/>
+            className={styles.offer_wrapper}>
+            <HeaderText text="Пропозиція" />
+            <div className={styles.offer_empty_space} />
             <Package isSelected={isOfferSelected(offerObj)}
-                     onClick={() => handleSelectChange(offerObj)} title={offerObj.title} id={offerObj.id}
-                     list={offerObj.list}
-                     price={offerObj.price} isMain/>
+                onClick={() => handleSelectChange(offerObj)} title={offerObj.title} id={offerObj.id}
+                list={offerObj.list}
+                price={offerObj.price} isMain />
 
             <p className={styles.offer_text_mobile}>
                 Партнерам попередніх хакатонів -5%
-                <br/>
+                <br />
                 Базовий + 2 опції - 50$
-                <br/>
+                <br />
                 Базовий + 3 опції -100$
-                <br/>
+                <br />
             </p>
             <div className={styles.offer_options_wrapper}>
                 {optionalPackages.map((packageItem, index) => (
@@ -90,6 +90,33 @@ const Offer = () => {
                         price={packageItem.price}
                     />
                 ))}
+            </div>
+            <div className={styles.additionalInfoContainer}>
+
+                <div>
+
+                    <div className={styles.feedback_container}>
+
+                        <div className={styles.additionalInfo_container}>
+
+                            <p>
+                                Кожен, хто стає партнером у нашому проєкті, має змогу долучитись до благодійного збору-розіграшу
+                                для ЗСУ в наших соціальних мережах. Серед людей, які задонатять, випадковим чином оберуться переможці,
+                                які отримають подарунки від компаній-партнерів. Також після успішного завершення Хакатону
+                                Вам надається фото та відеозвіт від організаторів
+
+                            </p>
+
+                            <p>*Оплата буде здійснюватись за курсом НБУ </p>
+                            <p>партнерам попередніх проєктів -5%</p>
+                            <p>базовий + 2 опції  — 50$</p>
+                            <p>базовий + 3 опції — 150$</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
         </AnimationWrapper>
 

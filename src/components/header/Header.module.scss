@@ -54,3 +54,7 @@
 .drawer_link > a:focus {
   outline: none;
 }
+
+.hoverHeader:hover {
+  text-shadow: radial-gradient(107.31% 107.31% at 19.28% 17.52%, #2dab66 0%, #0d0d0d 100%);
+}

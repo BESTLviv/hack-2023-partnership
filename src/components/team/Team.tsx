@@ -21,7 +21,7 @@ const Team: React.FC = () => {
                     avatarSrc={AnnaHukSvg}
                     name="Анна Гук"
                     position="Відповідальна за корпоративні зв'язки"
-                    number="+380987567648"
+                    number="+380686814667"
                     email="anna.huk.best@gmail.com"
                 />
                 <Teammate

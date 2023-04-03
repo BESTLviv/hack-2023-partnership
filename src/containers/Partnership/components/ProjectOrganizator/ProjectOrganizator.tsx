@@ -25,9 +25,10 @@ const ProjectOrganizator: React.FC = () => {
                     <img src={BestLogo} alt="BEST Logo" style={{background: 'transparent', display: 'block'}}
                          className={style.bestLogo}/>
                     <Box className={style.projorg_best_description}>
-                        <span className={style.projorg_BEST}>BEST</span> — це неприбуткова громадська організація, яка
-                        об’єднує студентів технічних спеціальностей для забезпечення обміну знаннями та співпраці
-                        компаній, університетів та студентів Європи.
+                        <span className={style.projorg_BEST}>BEST Lviv  (Board of European Students of Technology)</span> — осередок міжнародної 
+                        неприбуткової громадської організації, яка об’єднує студентів технічних
+                         спеціальностей. Нашою місією є розвиток студентів через обмін  знаннями та
+                          співпрацю компаній, університетів та студентів Європи.
                     </Box>
                 </Flex>
                 <Flex className={style.mapWrapper} w={'100%'}>

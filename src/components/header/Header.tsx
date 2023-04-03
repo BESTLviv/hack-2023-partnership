@@ -39,10 +39,10 @@ const Header = () => {
                         <HamburgerIcon w={30} h={30} onClick={onOpen} className={style.hamburger_icon}/>
                     </Box>
                     <Box display={{base: 'none', md: 'flex'}} className={style.header_desktop}>
-                        <div style={{display: 'flex', alignItems: 'center', gap: '20px'}}>
+                        <div style={{display: 'flex', alignItems: 'center', gap: '20px'}} >
 
                             {menuItems.map((item) => (
-                                <AnchorLink key={item.href} href={item.href} offset={300}>
+                                <AnchorLink key={item.href} href={item.href} offset={300} className={style.hoverHeader}>
                                     <Box key={item.href} as="p" p={2}>
                                         {item.label}
                                     </Box>

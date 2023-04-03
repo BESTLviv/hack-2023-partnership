@@ -9,7 +9,7 @@ function SelectableCard({children, onClick, className,isSelected, ...rest}: any)
             onClick={() => onClick()}
             whileHover={{scale: 1.05}}
             whileTap={{scale: 0.95}}
-            animate={{opacity: isSelected ? 1 : 0.5, scale: isSelected ? 1.1 : 1}}
+            animate={{opacity: isSelected ? 1 : 0.65, scale: isSelected ? 1.1 : 1}}
         >
             {children}
         </motion.div>

@@ -31,7 +31,7 @@ const Feedback = () => {
                                 <h3 className={styles.feedback_title}>OSF DIGITAl</h3>
 
                                 <p>
-                                    Хороший івент, для нас це був цікавий досвід.
+                                    Хороша подія, для нас це був цікавий досвід.
                                 </p>
                             </div>
 

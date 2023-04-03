@@ -39,7 +39,7 @@ const Package = ({title, id, isSelected, list, price, isMain, onClick}: Props) =
                                                        className={styles.package_list_text}>{item}</li>)}
                     </ul>
                 </div>
-                <p className={styles.package_pick}>Обрати</p>
+                <p className={styles.package_pick}></p>
                 <div className={styles.package_price}>
                     <p className={styles.package_price_text}>{price}$</p>
                 </div>
