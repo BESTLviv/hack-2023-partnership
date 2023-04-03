@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="fixed statistic">
-      <change afterPath="$PROJECT_DIR$/src/components/ParticlesBackground/ParticlesBackground.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ParticlesBackground/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SmothScroll/SmothScroll.tsx" afterDir="false" />
+    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="added anchors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qa/QA.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/qa/QA.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/team/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/team/Team.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/Offer/Offer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Offer/Offer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/CarouselSection/CarouselSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/CarouselSection/CarouselSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +23,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vova_project_organizator" />
+        <entry key="$PROJECT_DIR$" value="smooth" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +84,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680378670804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixes">
+      <created>1680461664728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680461664728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added redux for bucket and orders">
+      <created>1680465942051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680465942051</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactored animations and backgrounds">
+      <created>1680469568146</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680469568146</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +137,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed carousel" />
     <MESSAGE value="fixed statistic" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed statistic" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="added redux for bucket and orders" />
+    <MESSAGE value="refactored animations and backgrounds" />
+    <MESSAGE value="added anchors" />
+    <option name="LAST_COMMIT_MESSAGE" value="added anchors" />
   </component>
 </project>

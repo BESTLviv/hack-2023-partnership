@@ -116,7 +116,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1E1E1E;
+  background-color: black;
+
 }
 
 .scroll-container {
@@ -124,7 +125,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
   will-change: transform;
 }
 

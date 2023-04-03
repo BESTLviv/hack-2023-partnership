@@ -4,16 +4,18 @@ import styles from './StatisSection.module.scss'
 import HeaderText from '../../components/HeaderText';
 import ChartInfo from '../../components/ChartInfo';
 import SocialMediaCard from './components/SocialMediaCard';
+import AnimationWrapper from "../../Animations";
 
 const StatisticSection = () => {
     return (
-        <div className={styles.statisticSectionContainer}>
-            <HeaderText text={'Статистика '}/>
-            <div className={styles.statisticContentWrapper}>
-                <SocialMediaCard/>
-                <ChartInfo/>
-            </div>
-        </div>
+            <AnimationWrapper duration={1} animationType={'fadeIn'} className={styles.statisticSectionContainer}>
+                <HeaderText text={'Статистика '}/>
+                <div className={styles.statisticContentWrapper}>
+                    <SocialMediaCard/>
+                    <ChartInfo/>
+                </div>
+            </AnimationWrapper>
+
     );
 };
 

@@ -12,7 +12,7 @@ interface RoundWhiteCheckboxProps {
 
 const RoundWhiteCheckbox = ({id,name,checked,onChange,labelText} : RoundWhiteCheckboxProps) => {
   return (
-    <label className={styles.roundWhiteCheckbox}>
+    <label className={styles.roundWhiteCheckbox} style={{pointerEvents:'all'}}>
       <input
         type="checkbox"
         id={id}

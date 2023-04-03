@@ -13,6 +13,8 @@ import styles from './Partnership.module.scss';
 import ForPartners from './components/ForPartners';
 import OfferPopup from './components/OfferPopup';
 import { useState } from 'react';
+import SmothScroll from "../../components/SmothScroll/SmothScroll";
+
 
 const OFFERS = {
   Initiator: [
@@ -46,6 +48,8 @@ const Partnership = () => {
   return (
     <div className={`${styles.container} ${popupActive ? styles.overflowHidden : ''}`} >
       <Header />
+      <SmothScroll>
+
       <div className={styles.contentWrapper}>
         <Hero />
         <CarouselSection />
@@ -59,11 +63,11 @@ const Partnership = () => {
         <ProjectOrganizator />
         <Team />
       </div>
+      </SmothScroll>
       {/* <OfferPopup offerTitle='Initiator — обмежена пропозиція (лише 3 компанії зможуть придбати) (на сайті буде видно, скільки таких пакетів залишилось, коли всі скуплять то пакет затемниться і стане недоступний для вибору)
 ' offer={OFFERS.Initiator} /> */}
       <Footer />
     </div>
-  );
-};
+  )};
 
 export default Partnership;

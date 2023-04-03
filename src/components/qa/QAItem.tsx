@@ -16,7 +16,7 @@ const QAItem: React.FC<QAItemProps> = ({question, answer}) => {
   return (
     <Flex onClick={() => setIsOpened(!isOpened)} className={style.qa_item} flexDirection={'row'}>
       <InfoIcon className={style.qa_item_icon}/>
-      <Flex className={style.qa_qa} flexDirection={'column'}>
+      <Flex className={style.qa_qa} justifyContent={'center'} flexDirection={'column'}>
         <span className={style.qa_item_question}>{question}</span>
         {
           isOpened ? (
