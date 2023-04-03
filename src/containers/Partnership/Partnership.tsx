@@ -13,9 +13,10 @@ import styles from './Partnership.module.scss';
 import ForPartners from './components/ForPartners';
 import OfferPopup from './components/OfferPopup';
 import SmothScroll from '../../components/SmothScroll/SmothScroll';
+import Topic from './components/Topic/Topic';
+
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
-
 
 
 
@@ -32,6 +33,7 @@ const Partnership = () => {
       <div className={styles.contentWrapper}>
         <Hero />
         <CarouselSection />
+        <Topic/>
         <ForPartners />
         <StatisticSection />
         {/* нас підтримували */}
@@ -49,3 +51,4 @@ const Partnership = () => {
   )};
 
 export default Partnership;
+

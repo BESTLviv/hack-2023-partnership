@@ -1,8 +1,8 @@
 import {Flex} from '@chakra-ui/react';
 
-import AnnaHukSvg from '../../assets/images/team/anna_huk.svg';
-import BohdanVivcharSvg from '../../assets/images/team/bohdan_vivchar.svg';
-import SofiaLevSvg from '../../assets/images/team/sofia_lev.svg';
+import AnnaHukSvg from '../../assets/images/team/anna_huk.png';
+import BohdanVivcharSvg from '../../assets/images/team/bohdan_vivchar.png';
+import SofiaLevSvg from '../../assets/images/team/sofia_lev.png';
 import HeaderText from '../HeaderText';
 
 import Teammate from './Teammate';
@@ -14,7 +14,8 @@ const Team: React.FC = () => {
 
             <HeaderText text="Контакти"/>
             <div style={{marginTop: '40px'}}/>
-            <Flex id={'contacts'} flexDirection={'row'} gap={'100px'} alignItems={'stretch'} justifyContent={'center'}
+            <Flex id={'contacts'} flexDirection={'row'} gap={'100px'}
+                  alignItems={'stretch'} justifyContent={'center'}
                   flexWrap={'wrap'}>
                 <Teammate
                     avatarSrc={AnnaHukSvg}

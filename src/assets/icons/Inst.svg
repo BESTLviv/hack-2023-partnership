@@ -1,13 +1,7 @@
 <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_252_3006)">
-<circle cx="55.573" cy="25.1908" r="2.79775" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
-</g>
-<g filter="url(#filter1_d_252_3006)">
-<circle cx="40.2778" cy="40.2778" r="13.2163" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
-</g>
-<g filter="url(#filter2_d_252_3006)">
-<rect x="11.5" y="11.5" width="57.764" height="57.764" rx="13.5" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
-</g>
+<circle cx="55.573" cy="25.1908" r="2.79775" stroke="white" stroke-width="2"/>
+<circle cx="40.2778" cy="40.2778" r="13.2163" stroke="white" stroke-width="3"/>
+<rect x="11.5" y="11.5" width="57.764" height="57.764" rx="13.5" stroke="white" stroke-width="3"/>
 <defs>
 <filter id="filter0_d_252_3006" x="41.7753" y="11.3931" width="27.5955" height="27.5955" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
