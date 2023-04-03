@@ -65,6 +65,6 @@ const orderSlice = createSlice({
 });
 
 export const { selectOrder, setPopupTitle, setAudiencePopup } = orderSlice.actions;
-export const selectedOrders = (state: RootState) => state.order
+export const selectedOrders = (state: RootState) => state.order;
 export default orderSlice.reducer;
 
