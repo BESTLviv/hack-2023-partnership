@@ -12,30 +12,31 @@ import Feedback from '../../components/feedback/Feedback';
 import styles from './Partnership.module.scss';
 import ForPartners from './components/ForPartners';
 import SmothScroll from "../../components/SmothScroll/SmothScroll";
+import Topic from "./components/Topic/Topic";
 
 const Partnership = () => {
     return (
         <>
 
-                <Header/>
+            <Header/>
 
 
-
-                <SmothScroll>
-                    <div className={styles.contentWrapper}>
-                        <Hero/>
-                        <CarouselSection/>
-                        <ForPartners/>
-                        <StatisticSection/>
-                        {/* нас підтримували */}
-                        <Feedback/>
-                        <Offer/>
-                        <Cart/>
-                        <QA/>
-                        <ProjectOrganizator/>
-                        <Team/>
-                    </div>
-                </SmothScroll>
+            <SmothScroll>
+                <div className={styles.contentWrapper}>
+                    <Hero/>
+                    <CarouselSection/>
+                    <Topic/>
+                    <ForPartners/>
+                    <StatisticSection/>
+                    {/* нас підтримували */}
+                    <Feedback/>
+                    <Offer/>
+                    <Cart/>
+                    <QA/>
+                    <ProjectOrganizator/>
+                    <Team/>
+                </div>
+            </SmothScroll>
             <Footer/>
 
         </>

@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="added anchors">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/team/anna_huk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/team/bohdan_vivchar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/team/sofia_lev.png" afterDir="false" />
+    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="fixed icons and added links to social media">
+      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Companies/Companies.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Companies/Companies.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Topic/Topic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Facebook.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/In.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/In.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Inst.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Inst.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Telegram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/infoButton.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/infoButton.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/team/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/team/Team.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,21 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nestor/Desktop/home/hack/partnership_hackathon7&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/nestor/Desktop/home/hack/partnership_hackathon7/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/nestor/Desktop/home/hack/partnership_hackathon7",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/nestor/Desktop/home/hack/partnership_hackathon7/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -115,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680472002204</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed icons and added links to social media">
+      <created>1680513111734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680513111734</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +153,7 @@
     <MESSAGE value="added redux for bucket and orders" />
     <MESSAGE value="refactored animations and backgrounds" />
     <MESSAGE value="added anchors" />
-    <option name="LAST_COMMIT_MESSAGE" value="added anchors" />
+    <MESSAGE value="fixed icons and added links to social media" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed icons and added links to social media" />
   </component>
 </project>
