@@ -105,9 +105,8 @@ section {
   display: block;
 }
 
-a, img, button, input, {
+a, img, button, input {
   pointer-events: all;
-
 }
 
 body {
@@ -117,6 +116,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1E1E1E;
 }
 
 .scroll-container {
