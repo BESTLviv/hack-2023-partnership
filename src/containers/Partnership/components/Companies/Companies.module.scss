@@ -8,6 +8,10 @@
   column-gap: 10px;
 }
 
+.logo {
+  flex-basis: 20%;
+}
+
 @media screen and (max-width: 576px) {
   .companiesWrapper {
     margin-top: 50px;
@@ -15,6 +19,7 @@
     flex: 0;
   }
   .logo {
+    flex-basis: auto;
     width: 28%;
     height: auto;
   }
