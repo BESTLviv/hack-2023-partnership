@@ -1,9 +1,9 @@
 import Package from './components/Package';
 import HeaderText from '../../../../components/HeaderText';
 import styles from './Offer.module.scss';
-import AnimationWrapper from "../../../../Animations";
-import {useAppDispatch, useAppSelector} from "../../../../redux/store";
-import {IOffer, ordersId, selectOrder} from "../../../../redux/slices/orderSlice/orderSlice";
+import AnimationWrapper from '../../../../Animations';
+import {useAppDispatch, useAppSelector} from '../../../../redux/store';
+import {IOffer, selectOrder} from '../../../../redux/slices/orderSlice/orderSlice';
 
 const Offer = () => {
     const offerObj: IOffer = {
@@ -66,7 +66,7 @@ const Offer = () => {
             <HeaderText text="Пропозиція"/>
             <div className={styles.offer_empty_space}/>
             <Package isSelected={isOfferSelected(offerObj)}
-                     onClick={() => handleSelectChange(offerObj)} title={offerObj.title}
+                     onClick={() => handleSelectChange(offerObj)} title={offerObj.title} id={offerObj.id}
                      list={offerObj.list}
                      price={offerObj.price} isMain/>
 
@@ -82,6 +82,7 @@ const Offer = () => {
                 {optionalPackages.map((packageItem, index) => (
                     <Package
                         isSelected={isOfferSelected(packageItem)}
+                        id={packageItem.id}
                         onClick={() => handleSelectChange(packageItem)}
                         key={index}
                         title={packageItem.title}

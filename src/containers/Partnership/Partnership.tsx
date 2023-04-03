@@ -11,36 +11,44 @@ import ProjectOrganizator from './components/ProjectOrganizator/ProjectOrganizat
 import Feedback from '../../components/feedback/Feedback';
 import styles from './Partnership.module.scss';
 import ForPartners from './components/ForPartners';
-import SmothScroll from "../../components/SmothScroll/SmothScroll";
-import Topic from "./components/Topic/Topic";
+import OfferPopup from './components/OfferPopup';
+import SmothScroll from '../../components/SmothScroll/SmothScroll';
+import Topic from './components/Topic/Topic';
+
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
+
+
+
 
 const Partnership = () => {
-    return (
-        <>
-
-            <Header/>
+  const popupActive = useSelector((state: RootState) => state.order.popupTitle);
 
 
-            <SmothScroll>
-                <div className={styles.contentWrapper}>
-                    <Hero/>
-                    <CarouselSection/>
-                    <Topic/>
-                    <ForPartners/>
-                    <StatisticSection/>
-                    {/* нас підтримували */}
-                    <Feedback/>
-                    <Offer/>
-                    <Cart/>
-                    <QA/>
-                    <ProjectOrganizator/>
-                    <Team/>
-                </div>
-            </SmothScroll>
-            <Footer/>
+  return (
+    <div className={`${styles.container} ${popupActive ? styles.overflowHidden : ''}`} >
+      <Header />
+      <SmothScroll>
 
-        </>
-    );
-};
+      <div className={styles.contentWrapper}>
+        <Hero />
+        <CarouselSection />
+        <Topic/>
+        <ForPartners />
+        <StatisticSection />
+        {/* нас підтримували */}
+        <Feedback />
+        <Offer />
+        <Cart />
+        <QA />
+        <ProjectOrganizator />
+        <Team />
+      </div>
+      </SmothScroll>
+      {popupActive ? <OfferPopup /> : null }
+      <Footer />
+    </div>
+  )};
 
 export default Partnership;
+

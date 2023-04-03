@@ -31,7 +31,6 @@ const Header = () => {
         const offset = elementRect.top + elementRect.height / 2;
         return offset;
     };
-    console.log('matches', matches)
     return (
         <div style={{position: 'relative', zIndex: 100}}>
             <AnimationWrapper alwaysVisible={true} duration={1} animationType={!matches ? 'slideDown' : 'fadeIn'}>

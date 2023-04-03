@@ -1,6 +1,6 @@
-import {useAppSelector} from "../../../store";
-import {selectedForm} from "../formSlice";
-import {selectedOrders} from "../../orderSlice/orderSlice";
+import {useAppSelector} from '../../../store';
+import {selectedForm} from '../formSlice';
+import {selectedOrders} from '../../orderSlice/orderSlice';
 
 export const getTotalPrice = () => {
     const {isPartner} = useAppSelector(selectedForm)

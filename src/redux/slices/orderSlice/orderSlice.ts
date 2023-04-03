@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {RootState} from "../../store";
+import {RootState} from '../../store';
 
-export type ordersId = 'Базовий пакет' | 'Recruiter' | "Initiator" | "Get to know"
+export type ordersId = 'Базовий пакет' | 'Recruiter' | 'Initiator' | 'Get to know';
 
 export interface IOffer {
     title: string;
@@ -9,9 +9,11 @@ export interface IOffer {
     price: number;
     list: string[];
 }
+ 
 
 interface OrderState {
-    selectedOrders: IOffer[]; // Array of selected orders
+    selectedOrders: IOffer[] // Array of selected orders
+    popupTitle: ordersId | null; 
 }
 
 const initialState: OrderState = {
@@ -29,10 +31,11 @@ const initialState: OrderState = {
             'Участь в благодійному зборі-розіграші для ЗСУ (За вашим бажанням)',
         ],
     }],
+    popupTitle: null,
 };
 
 const orderSlice = createSlice({
-    name: 'counter',
+    name: 'order',
     initialState,
     reducers: {
         selectOrder(state, action: PayloadAction<IOffer>) {
@@ -50,10 +53,13 @@ const orderSlice = createSlice({
                 }
             }
         },
+        setPopupTitle(state, action: PayloadAction<ordersId | null>) {
+            state.popupTitle = action.payload;
+        },
     },
 });
 
-export const {selectOrder} = orderSlice.actions;
+export const { selectOrder, setPopupTitle } = orderSlice.actions;
 export const selectedOrders = (state: RootState) => state.order
 export default orderSlice.reducer;
 

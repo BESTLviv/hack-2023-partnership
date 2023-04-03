@@ -72,3 +72,10 @@ $big: 1200px;
   }
 
 }
+
+@media screen and (max-width: 568px) {
+  .textContainer {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+}

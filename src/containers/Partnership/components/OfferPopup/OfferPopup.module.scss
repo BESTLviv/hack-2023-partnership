@@ -1,0 +1,119 @@
+.popupWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.popupContent {
+  background: linear-gradient(119.88deg, rgba(45, 171, 102, 0.97) -28.82%, rgba(5, 5, 5, 0.97) 98.57%);
+  border-radius: 30px;
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 85vh;
+  overflow-y: scroll;
+  z-index: 999;
+  pointer-events: all;
+  position: absolute;
+  padding: 48px 60px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Play;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  cursor: auto;
+}
+
+.popupContent::-webkit-scrollbar {
+  display: none;
+}
+
+.offerTitle {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.desktopWrapper {
+  display: grid;
+  grid-template-columns: 1.7fr repeat(2, 3fr);
+  text-align: left;
+}
+
+.boxTitle {
+  border: 1px solid #ffffff;
+  border-left: 0;
+  border-bottom: 0;
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+.boxText {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-top: 1px solid #FFFFFF;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.closeBtnWrapper {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .desktopWrapper {
+    grid-template-columns: auto;
+  }
+
+  .popupContent {
+    padding: 20px 10px;
+    height: 85vh;
+  }
+
+  .offerTitle {
+    text-align: center;
+  }
+  .boxTitle {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-right: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .boxText {
+    grid-column: auto;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-top: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .closeBtnWrapper {
+    position: fixed;
+    top: 7%;
+    left: 7%;
+    right: auto;
+  }
+  
+}
