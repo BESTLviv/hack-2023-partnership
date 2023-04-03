@@ -14,6 +14,7 @@ import ForPartners from './components/ForPartners';
 import OfferPopup from './components/OfferPopup';
 import SmothScroll from '../../components/SmothScroll/SmothScroll';
 import Topic from './components/Topic/Topic';
+import Companies from './components/Companies';
 
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
@@ -36,7 +37,7 @@ const Partnership = () => {
         <Topic/>
         <ForPartners />
         <StatisticSection />
-        {/* нас підтримували */}
+        <Companies />
         <Feedback />
         <Offer />
         <Cart />

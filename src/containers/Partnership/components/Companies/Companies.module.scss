@@ -1,3 +1,21 @@
 .companiesWrapper{
+  max-width: 1130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 100px;
+  column-gap: 10px;
+}
 
+@media screen and (max-width: 576px) {
+  .companiesWrapper {
+    margin-top: 50px;
+    row-gap: 10px;
+    flex: 0;
+  }
+  .logo {
+    width: 28%;
+    height: auto;
+  }
 }
