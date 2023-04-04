@@ -107,7 +107,7 @@ const AnimationWrapper = (
             initial="hidden"
             whileInView='visible'
             animate={alwaysVisible && 'visible'}
-            viewport={{once: false}}
+            viewport={{once: true}}
             transition={{duration, delay, ease: easing}}
             variants={variants}
         >

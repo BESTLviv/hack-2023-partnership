@@ -26,29 +26,41 @@ const Partnership = () => {
     const popupActive = useSelector((state: RootState) => state.order.popupTitle);
     const audiencePopupActive = useSelector((state: RootState) => state.order.audiencePopup);
     const {matches} = useMediaQuery("(max-width: 769px)")
-    const Content = () => <div className={styles.contentWrapper}>
-        <Hero/>
-        <CarouselSection/>
-        <Topic/>
-        <ForPartners/>
-        <StatisticSection/>
-        <Companies/>
-        <Feedback/>
-        <Offer/>
-        <Cart/>
-        <QA/>
-        <ProjectOrganizator/>
-        <Team/>
-    </div>
     return (
         <div className={`${styles.container} ${popupActive ? styles.overflowHidden : ''}`}>
             <Header/>
             {matches ?
-                <Content/>
+                <div className={styles.contentWrapper}>
+                    <Hero/>
+                    <CarouselSection/>
+                    <Topic/>
+                    <ForPartners/>
+                    <StatisticSection/>
+                    <Companies/>
+                    <Feedback/>
+                    <Offer/>
+                    <Cart/>
+                    <QA/>
+                    <ProjectOrganizator/>
+                    <Team/>
+                </div>
                 :
                 <SmothScroll>
 
-                    <Content/>
+                    <div className={styles.contentWrapper}>
+                        <Hero/>
+                        <CarouselSection/>
+                        <Topic/>
+                        <ForPartners/>
+                        <StatisticSection/>
+                        <Companies/>
+                        <Feedback/>
+                        <Offer/>
+                        <Cart/>
+                        <QA/>
+                        <ProjectOrganizator/>
+                        <Team/>
+                    </div>
 
                 </SmothScroll>
             }

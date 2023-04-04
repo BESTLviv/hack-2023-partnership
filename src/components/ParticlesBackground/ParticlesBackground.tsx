@@ -73,7 +73,7 @@ const ParticlesBackground = ({children}: ParticlesBackgroundProps) => {
             },
             move: {
                 enable: true,
-                speed: 0.8,
+                speed: 0.3,
                 direction: "none",
                 random: false,
                 straight: false,
