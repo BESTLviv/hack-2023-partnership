@@ -28,7 +28,7 @@
   font-size: 20px;
   font-weight: 700;
   font-family: Play;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
   cursor: auto;
 }
@@ -60,6 +60,7 @@
 }
 
 .boxText {
+  white-space: pre-line;
   grid-column-start: 2;
   grid-column-end: 4;
   border-top: 1px solid #FFFFFF;
@@ -115,5 +116,5 @@
     left: 7%;
     right: auto;
   }
-  
+
 }

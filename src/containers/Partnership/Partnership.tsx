@@ -16,43 +16,49 @@ import SmothScroll from '../../components/SmothScroll/SmothScroll';
 import Topic from './components/Topic/Topic';
 import Companies from './components/Companies';
 
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store';
 import AudiencePopup from './components/AudiencePopup';
-
-
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 
 const Partnership = () => {
-  const popupActive = useSelector((state: RootState) => state.order.popupTitle);
-  const audiencePopupActive = useSelector((state: RootState) => state.order.audiencePopup);
-
-
-  return (
-    <div className={`${styles.container} ${popupActive ? styles.overflowHidden : ''}`} >
-      <Header />
-      <SmothScroll>
-
-      <div className={styles.contentWrapper}>
-        <Hero />
-        <CarouselSection />
+    const popupActive = useSelector((state: RootState) => state.order.popupTitle);
+    const audiencePopupActive = useSelector((state: RootState) => state.order.audiencePopup);
+    const {matches} = useMediaQuery("(max-width: 769px)")
+    const Content = () => <div className={styles.contentWrapper}>
+        <Hero/>
+        <CarouselSection/>
         <Topic/>
-        <ForPartners />
-        <StatisticSection />
-        <Companies />
-        <Feedback />
-        <Offer />
-        <Cart />
-        <QA />
-        <ProjectOrganizator />
-        <Team />
-      </div>
-      </SmothScroll>
-      {popupActive ? <OfferPopup /> : null }
-      {audiencePopupActive ? <AudiencePopup /> : null}
-      <Footer />
+        <ForPartners/>
+        <StatisticSection/>
+        <Companies/>
+        <Feedback/>
+        <Offer/>
+        <Cart/>
+        <QA/>
+        <ProjectOrganizator/>
+        <Team/>
     </div>
-  )};
+    return (
+        <div className={`${styles.container} ${popupActive ? styles.overflowHidden : ''}`}>
+            <Header/>
+            {matches ?
+                <Content/>
+                :
+                <SmothScroll>
+
+                    <Content/>
+
+                </SmothScroll>
+            }
+
+            {popupActive ? <OfferPopup/> : null}
+            {audiencePopupActive ? <AudiencePopup/> : null}
+            <Footer/>
+        </div>
+    )
+};
 
 export default Partnership;
 

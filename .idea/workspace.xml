@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="fixed icons and added links to social media">
-      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Companies/Companies.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Companies/Companies.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Topic/Topic.tsx" afterDir="false" />
+    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="fixed icons and added links to social media, added icons for companies">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qa/QA.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/qa/QA.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/Partnership.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/OfferPopup/OfferPopup.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/OfferPopup/OfferPopup.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/OfferPopup/OfferPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/OfferPopup/OfferPopup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/nestor/Desktop/home/hack/partnership_hackathon7",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/nestor/Desktop/home/hack/partnership_hackathon7/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nestor/Desktop/home/hack/partnership_hackathon7/src/assets/icons/companies&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/nestor/Desktop/home/hack/partnership_hackathon7/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/icons/companies" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +75,7 @@
       <updated>1679833970584</updated>
       <workItem from="1679833971931" duration="1127000" />
       <workItem from="1680349093360" duration="2754000" />
+      <workItem from="1680599142079" duration="1759000" />
     </task>
     <task id="LOCAL-00001" summary="fixed carousel">
       <created>1680377927357</created>
@@ -117,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680513111734</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed icons and added links to social media, added icons for companies">
+      <created>1680513950358</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680513950358</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +170,7 @@
     <MESSAGE value="refactored animations and backgrounds" />
     <MESSAGE value="added anchors" />
     <MESSAGE value="fixed icons and added links to social media" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed icons and added links to social media" />
+    <MESSAGE value="fixed icons and added links to social media, added icons for companies" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed icons and added links to social media, added icons for companies" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import Partnership from './containers/Partnership';
 import ParticlesBackground from './components/ParticlesBackground';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
 
