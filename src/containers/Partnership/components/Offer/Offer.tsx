@@ -70,14 +70,6 @@ const Offer = () => {
                 list={offerObj.list}
                 price={offerObj.price} isMain />
 
-            <p className={styles.offer_text_mobile}>
-                Партнерам попередніх хакатонів -5%
-                <br />
-                Базовий + 2 опції - 50$
-                <br />
-                Базовий + 3 опції -100$
-                <br />
-            </p>
             <div className={styles.offer_options_wrapper}>
                 {optionalPackages.map((packageItem, index) => (
                     <Package
