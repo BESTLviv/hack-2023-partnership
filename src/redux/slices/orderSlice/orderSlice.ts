@@ -8,6 +8,8 @@ export interface IOffer {
     id: ordersId;
     price: number;
     list: string[];
+    isLimited?: string;
+    
 }
  
 

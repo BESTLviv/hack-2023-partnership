@@ -39,6 +39,7 @@ const Offer = () => {
                 'Номінація від компанії',
                 'Пост про компанію в Instagram',
             ],
+            isLimited: 'Обмежено'
         } as IOffer,
         {
             title: 'Get to know',
@@ -80,6 +81,7 @@ const Offer = () => {
                         title={packageItem.title}
                         list={packageItem.list}
                         price={packageItem.price}
+                        isLimited={packageItem.isLimited}
                     />
                 ))}
             </div>

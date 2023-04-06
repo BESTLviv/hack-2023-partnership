@@ -3,6 +3,7 @@ import InfoButton from '../InfoButton';
 import SelectableCard from "../../../../../../components/SelectedCard/SelectedCard";
 import {IOffer, ordersId, setPopupTitle} from "../../../../../../redux/slices/orderSlice/orderSlice";
 import { useDispatch } from 'react-redux';
+import Offer from '../../Offer';
 
 
 type Props = {
@@ -13,9 +14,10 @@ type Props = {
     isMain?: boolean;
     isSelected: boolean;
     onClick: (id: IOffer) => void
+    isLimited?: string
 };
 
-const Package = ({title, id, isSelected, list, price, isMain, onClick}: Props) => {
+const Package = ({title, id, isSelected, list, price, isMain, onClick, isLimited}: Props) => {
     const dispatch = useDispatch();
 
     const handleInfo = (e:  React.MouseEvent<HTMLElement>) => {
@@ -42,7 +44,16 @@ const Package = ({title, id, isSelected, list, price, isMain, onClick}: Props) =
                 <p className={styles.package_pick}></p>
                 <div className={styles.package_price}>
                     <p className={styles.package_price_text}>{price}$</p>
-                </div>
+                </div>  
+    <div>
+      {
+        (isLimited === 'Обмежено')
+          ? <div >
+            <p className={styles.package_limited}>Обмежено </p> 
+            </div> 
+          : <span></span>
+      }
+    </div>
             </SelectableCard>
         </>
 
