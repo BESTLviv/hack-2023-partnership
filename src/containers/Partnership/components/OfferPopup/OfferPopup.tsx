@@ -11,17 +11,17 @@ type OffersType = {
     title: string;
     text: string;
   }[];
-}
+};
 
 const OFFERS: OffersType = {
   'Базовий пакет': [
     {
       title: 'Промоція в соціальних мережах',
-      text: 'Логотип компанії на бренд-волі та на сайті проєкту - Розміщення логотипа партнера на бренд-волі проєкту, а також на сайті Хакатону',
+      text: 'Промоція в соціальних мережах (інформація про компанію) - Розміщення інформації про компанію в соціальних мережах:\n* 1 згадка в Instagram story\n* 1 пост в LinkedIn\n* Пост дайджест у Telegram каналі',
     },
     {
-      title: 'Розміщення логотипу компанії на брендволі',
-      text: 'Розміщення інформації про компанію в соціальних мережах: \n a. 1 згадка в Instagram story \n b. 1 пост в LinkedIn \nc. Пост дайджест у Telegram каналі',
+      title: 'Розміщення логотипу компанії на бренд-волі та на сайті проєкту',
+      text: 'Логотип компанії на бренд-волі та на сайті проєкту - Розміщення логотипа партнера на бренд-волі проєкту, а також на сайті Хакатону',
     },
     {
       title: 'Поширення промо-продукції',
@@ -48,8 +48,7 @@ const OFFERS: OffersType = {
       text: 'Нетворкінг є засобом зустрічі між учасниками, організаторами та представниками компанії в неформальній обстановці, що може стати відмінною нагодою для студентів знайти роботу або стажування, а для компаній - надати ці можливості. Час проведення орієнтовно година.',
     }
   ]
-}
-
+};
 
 const OfferPopup = () => {
   const offerTitle = useSelector((state: RootState) => state.order.popupTitle);
@@ -65,25 +64,34 @@ const OfferPopup = () => {
     }, [] as string[]);
   }, [offerTitle]);
 
-
   const closePopup = () => {
     document.body.style.overflow = '';
     dispatch(setPopupTitle(null));
-  }
-
+  };
 
   return (
     <div className={styles.popupWrapper} onClick={closePopup}>
       <div className={styles.popupContent}>
-        <div onClick={closePopup} className={styles.closeBtnWrapper}><img src={ArrowIcon} className={styles.arrowIcon} /></div>
+        <div onClick={closePopup} className={styles.closeBtnWrapper}>
+          <img src={ArrowIcon} className={styles.arrowIcon} />
+        </div>
         <div className={styles.offerTitle}>{offerTitle}</div>
         <div className={styles.desktopWrapper}>
           {offer.map((content, index) => {
-            return index % 2 === 0 ? (<div className={styles.boxTitle} key={index}>{content}</div>) : (<div className={styles.boxText} key={index}>{content}</div>)
+            return index % 2 === 0 ? (
+              <div className={styles.boxTitle} key={index}>
+                {content}
+              </div>
+            ) : (
+              <div className={styles.boxText} key={index}>
+                {content}
+              </div>
+            );
           })}
         </div>
       </div>
-    </div>);
-}
+    </div>
+  );
+};
 
 export default OfferPopup;

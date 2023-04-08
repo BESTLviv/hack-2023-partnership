@@ -15,17 +15,6 @@
   &_empty_space {
     margin-top: 76px;
   }
-
-  &_options_wrapper {
-    display: flex;
-    gap: 60px;
-    flex: 1;
-    justify-content: center;
-    align-items: stretch;
-    margin: 70px;
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 .additionalInfo_container p {
@@ -68,7 +57,7 @@
 @media screen and (max-width: 576px) {
   .offer {
     &_empty_space {
-      margin-top: 13px;
+      margin-top: 50px;
     }
 
 
