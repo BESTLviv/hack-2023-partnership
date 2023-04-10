@@ -3,12 +3,10 @@
 import { FormEvent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from './Form.module.scss';
-import RoundWhiteCheckbox from './RoundWhiteCheckbox';
 import {resetForm, togglePartner, updateCompanyName, updateEmail} from "../../redux/slices/formSlice/formSlice";
 import {RootState} from "../../redux/store";
 import Button from "../button/Button";
 import emailjs from '@emailjs/browser';
-import { getTotalPrice } from '../../redux/slices/formSlice/utils/getTotalPrice';
 
 const CustomForm = () => {
     const { companyName, email, isPartner } = useSelector(
@@ -16,7 +14,6 @@ const CustomForm = () => {
     );
 
     const selectedOrders  = useSelector((state: RootState) => state.order.selectedOrders);
-    const price = getTotalPrice();
     const dispatch = useDispatch();
 
 
@@ -26,7 +23,6 @@ const CustomForm = () => {
             company_name: companyName,
             company_email: email,
             isPartner: isPartner,
-            price: price + '$',
             options: selectedOrders.map((order) => order.id).join('; '),
             message: 'some message',
         }
@@ -39,13 +35,6 @@ const CustomForm = () => {
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
-            <RoundWhiteCheckbox
-                id="custom-checkbox"
-                name="custom-checkbox"
-                checked={isPartner}
-                onChange={() => dispatch(togglePartner())}
-                labelText="Постійний партнер"
-            />
             <input
                 required
                 type="text"

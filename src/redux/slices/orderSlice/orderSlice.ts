@@ -1,12 +1,11 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {RootState} from '../../store';
 
-export type ordersId = 'Базовий пакет'; 
+export type ordersId = 'Пропозиція'; 
 
 export interface IOffer {
     title: string;
     id: ordersId;
-    price: number;
     list: string[];
 }
  
@@ -19,9 +18,8 @@ interface OrderState {
 
 const initialState: OrderState = {
     selectedOrders: [{
-        title: 'Базовий пакет',
-        id: 'Базовий пакет',
-        price: 300,
+        title: 'Пропозиція',
+        id: 'Пропозиція',
         list: [
            'Промоція в соціальних мережах ',
            'Розміщення логотипу компанії на брендволі',
@@ -42,7 +40,7 @@ const orderSlice = createSlice({
     initialState,
     reducers: {
         selectOrder(state, action: PayloadAction<IOffer>) {
-            if (action.payload.id !== 'Базовий пакет') {
+            if (action.payload.id !== 'Пропозиція') {
                 // If the selected order is not the base package
                 const index = state.selectedOrders.findIndex(
                     (order) => order.id === action.payload.id

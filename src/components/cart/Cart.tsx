@@ -4,7 +4,6 @@ import styles from './Cart.module.scss';
 import HeaderText from '../HeaderText';
 import AnimationWrapper from "../../Animations";
 import {useAppSelector} from "../../redux/store";
-import {selectedForm} from "../../redux/slices/formSlice/formSlice";
 import {getTotalPrice} from "../../redux/slices/formSlice/utils/getTotalPrice";
 
 const Left = () => {
@@ -22,10 +21,6 @@ const Left = () => {
                 }
             </div>
 
-            <div>
-                <hr className={styles.hr}/>
-                <p className={styles.total_price}>{sum}$</p>
-            </div>
         </Flex>
     );
 };

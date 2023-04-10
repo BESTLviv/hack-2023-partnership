@@ -6,7 +6,7 @@ export const getTotalPrice = () => {
     const {isPartner} = useAppSelector(selectedForm)
     const {selectedOrders: orders} = useAppSelector(selectedOrders)
     let sum = orders.reduce((acc, order) => {
-        return acc + order.price;
+        return acc ;
     }, 0);
 
     if (orders.length === 4) {

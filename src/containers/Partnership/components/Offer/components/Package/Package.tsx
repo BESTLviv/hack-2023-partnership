@@ -9,13 +9,12 @@ type Props = {
     title: string;
     id: ordersId;
     list: string[];
-    price: number;
     isMain?: boolean;
     isSelected: boolean;
     onClick: (id: IOffer) => void
 };
 
-const Package = ({title, id, isSelected, list, price, isMain, onClick}: Props) => {
+const Package = ({title, id, isSelected, list, isMain, onClick}: Props) => {
     const dispatch = useDispatch();
 
     const handleInfo = (e:  React.MouseEvent<HTMLElement>) => {
@@ -40,9 +39,6 @@ const Package = ({title, id, isSelected, list, price, isMain, onClick}: Props) =
                     </ul>
                 </div>
                 <p className={styles.package_pick}></p>
-                <div className={styles.package_price}>
-                    <p className={styles.package_price_text}>{price}$</p>
-                </div>
             </SelectableCard>
         </>
 

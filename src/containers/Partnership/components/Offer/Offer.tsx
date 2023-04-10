@@ -7,9 +7,8 @@ import { IOffer, selectOrder } from '../../../../redux/slices/orderSlice/orderSl
 
 const Offer = () => {
   const offerObj: IOffer = {
-    title: 'Базовий пакет',
-    id: 'Базовий пакет',
-    price: 300,
+    title: 'Пропозиція',
+    id: 'Пропозиція',
     list: [
       'Промоція в соціальних мережах ',
       'Розміщення логотипу компанії на брендволі',
@@ -48,7 +47,6 @@ const Offer = () => {
         title={offerObj.title}
         id={offerObj.id}
         list={offerObj.list}
-        price={offerObj.price}
         isMain
       />
       <div className={styles.offer_empty_space} />
@@ -60,7 +58,6 @@ const Offer = () => {
                 Після успішного завершення Хакатону Вам надається фото та
                 відеозвіт від організаторів
               </p>
-              <p>*Оплата буде здійснюватись за курсом НБУ </p>
             </div>
           </div>
         </div>
