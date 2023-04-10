@@ -2,13 +2,11 @@ import {Grid, Flex} from '@chakra-ui/react';
 import CustomForm from './CustomForm';
 import styles from './Cart.module.scss';
 import HeaderText from '../HeaderText';
-import AnimationWrapper from "../../Animations";
-import {useAppSelector} from "../../redux/store";
-import {getTotalPrice} from "../../redux/slices/formSlice/utils/getTotalPrice";
+import AnimationWrapper from '../../Animations';
+import {useAppSelector} from '../../redux/store';
 
 const Left = () => {
     const selectedOrders = useAppSelector((state) => state.order.selectedOrders);
-    const sum = getTotalPrice()
 
     return (
         <Flex direction={'column'} h={'100%'} justifyContent={'space-between'}>
