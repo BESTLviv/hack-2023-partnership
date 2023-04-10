@@ -45,7 +45,7 @@ const Offer = () => {
             title: 'Get to know',
             id: 'Get to know',
             price: 200,
-            list: ['World cafe', 'Інтерактивні Insta-stories', 'Завдання дня'],
+            list: ['World cafe', 'Інтерактивні Insta-stories', 'Завдання дня', 'Транслювання відео компанії під час Хакатону']
         } as IOffer,
     ];
 
