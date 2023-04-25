@@ -1,64 +1,163 @@
 {
-  "about_us": "About us",
-  "questions": "Questions",
-  "contacts": "Contacts",
   "become_partner": "Become a partner",
   "hackathon": {
+    "benefits_topic": "For partners it is:",
     "title": "BEST::HACKath0n —",
     "description": "an event where IT students team up to create a new software product within 24 hours in a non-stop programming format.",
-    "second_description" : "This year's theme \"volunteering\" will allow students to participate in an important social process and focus on developing creative and innovative solutions. which will help increase the effectiveness and popularity of volunteering in Ukraine.",
+    "second_description": "This is one of the most interesting formats of the competition, as teams have to create their project in a short time and be able to present it successfully. It is a good opportunity for students to improve their teamwork skills, meet like-minded people and communicate with company representatives.",
+    "volonteer_descreption": "This year's theme of the program marathon, \"Volunteering\", provides students with a unique opportunity to participate in the current social process. Participants will focus on developing creative and innovative solutions that will help increase the effectiveness and popularity of volunteering in Ukraine. Volunteerism plays a key role in helping people and communities by engaging in a variety of areas, from charity to the environment. However, volunteerism faces a number of challenges that need to be addressed.",
     "theme": "volunteering",
-    "benefits": [
-      "Increased brand recognition",
-      "Effective PR targeted at the intended audience",
-      "Opportunity to find and support interesting ideas on the theme of volunteering",
-      "Improved image among students",
-      "Investment in ambitious and talented young people"
-    ]
+    "benefits": {
+      "brand_recognition": "Increased brand recognition",
+      "effective_pr": "Effective PR targeted at the ",
+      "opportunity_to_sup": "Opportunity to find and support interesting ideas on the theme of volunteering",
+      "improved_image": "Improved image among students",
+      "investment_in_people": "Investment in ambitious and talented young people"
+    },
+    "CA": "target audience"
   },
   "statistics": {
+    "topic": "Statistics",
     "tg_bot_users": "Number of users on Tg-bot",
     "registered_users": "Number of users who completed the full registration process",
     "selected_teams": "Number of teams that passed the selection"
   },
   "supported_by": "Supported by:",
-  "partner_reviews": [
+  "partner_reviews": {
+    "topic": "Partner feedback",
+    "reviews": {
+      "tsukat_review": "The event was an effective networking event that gave the first results almost immediately, the organizers were quick to respond to changes and issued an excellent report. In general, we have positive impressions.",
+      "osf_review": "Good event, it was an interesting experience for us.",
+      "keepit_review": "We really liked the event and were inspired by it."
+    }
+  },
+  "target_audience": {
+    "topic": "Information about the target audience of BEST:Hackathon",
+    "AUDIENCE_INFO": [
+      {
+        "title": "General Information:",
+        "list": [
+          "Intermediate level of English: B1",
+          "52% of participants have work experience in their specialty",
+          "92% of participants are programmers by profession"
+        ]
+      },
+      {
+        "title": "Specialties:",
+        "list": [
+          "Software engineering",
+          "Computer Science",
+          "Internet of Things",
+          "Artificial Intelligence Systems",
+          "Cybersecurity",
+          "Systems Analysis"
+        ]
+      },
+      {
+        "title": "Knowledge of programming languages:",
+        "list": [
+          "Java - 7%",
+          ".Net - 25%",
+          "Web technologies - 40%",
+          "Python - 16%",
+          "Other - 12%"
+        ]
+      },
+      {
+        "title": "Statistics on university courses:",
+        "list": [
+          "Ⅰ course - 30%",
+          "Ⅱ course - 33%",
+          "Ⅲ course - 16%",
+          "Ⅳ course - 15%",
+          "V - 6%"
+        ]
+      }
+    ]
+  },
+  "service_packages": {
+    "Offer": "Offer",
+    "Offers": [
+      {
+        "title": "Basic Package",
+        "id": "Базовий пакет",
+        "price": 300,
+        "list": [
+          "Company logo on the brand will and on the project website.",
+          "Promotion in social networks (information about the company)",
+          "Logo and mention of the company in the post-project video",
+          "Participation in networking"
+        ],
+        "isLimited": "none"
+      },
+      {
+        "title": "Recruiter",
+        "id": "Recruiter",
+        "price": 200,
+        "list": [
+          "Sending vacancies in a Telegram bot",
+          "Access to the CV database of participants"
+        ],
+        "isLimited": "none"
+      },
+      {
+        "title": "Initiator",
+        "id": "Initiator",
+        "price": 700,
+        "list": [
+          "Providing a mentor and a judge",
+          "Conducting a workshop or training (25-45 minutes)",
+          "Logo on T-shirts",
+          "Nomination from the company",
+          "Post about the company on Instagram"
+        ],
+        "isLimited": "Limited"
+      },
+      {
+        "title": "Get to know",
+        "id": "Get to know",
+        "price": 200,
+        "list": [
+          "World cafe",
+          "Interactive Insta-stories",
+          "Task of the day",
+          "Broadcasting the company's video during the Hackathon"
+        ],
+        "isLimited": "none"
+      }
+    ],
+    "charitable_collection": "Everyone who becomes a partner in our project has the opportunity to join a charity collection-raffle for the Armed Forces on our social media. Winners will be randomly selected among the people who donate and receive gifts from partner companies. Also, after the successful completion of the Hackathon, you will receive a photo and video report from the organizers.",
+    "NBU_course": "*Payment will be made at the NBU exchange rate",
+    "previous_partners": "for partners of previous projects -5%",
+    "2_opts": "basic + 2 options - $50",
+    "3_opts": "basic + 3 options - $150"
+  },
+  "cart": {
+    "topic": "Cart",
+    "regular_partner": "Regular partner",
+    "name": "company name",
+    "email": "email",
+    "submit": "submit"
+  },
+  "QA": [
     {
-      "company_name": "Tsukat",
-      "review": "An effective networking event was held, which gave results almost immediately, the organizers quickly responded to changes and made an excellent report. Overall, we had a positive experience."
+      "question": "Will the event be paused in the event of a power outage?",
+      "answer": "The hackathon will not stop, the power supply will be provided by the generator"
     },
     {
-      "company_name": "OSF DIGITAL",
-      "review": "It was a good event, and it was an interesting experience for us."
-    },
-    {
-      "company_name": "Keepit",
-      "review": "We really enjoyed the event, and it was inspiring."
+      "question": "Will there be a shelter that is the right size for all participants?",
+      "answer": "Yes, in case of an air raid, the organizers will guide all participants to the shelter."
     }
   ],
-  "bazovyi_paket": "Basic package",
-  "lohotyp_kompanii_na_brend_volii_ta_na_saiti_proiektu": "Company logo on the brand wall and on the project website",
-  "promotsiia_v_sotsialnykh_merezakh": "Promotion on social media",
-  "foto_ta_video_zvit": "Photo and video report",
-  "lohotyp_ta_zhadka_pro_kompaniiu_u_post_video": "Company logo and mention in post video",
-  "transliuvannia_video_kompanii_pid_chas_khakatonu": "Live streaming of company video during the Hackathon",
-  "uchast_u_netvorkinhu": "Participation in networking",
-  "uchast_v_blahodiinomu_zbori_rozihrashi_dlia_zsu": "Participation in a charity collection-raffle for the Armed Forces of Ukraine (upon your request)",
-  "recruiter": "Recruiter",
-  "rozsylka_vakansii_u_telegram_boti": "Mailing of vacancies in the Telegram bot",
-  "dostup_do_bazy_cv_uchasnykiv": "Access to the database of participant CVs",
-  "initiator": "Initiator",
-  "get_to_know": "Get to know",
-  "nadanina_mentora_ta_suddi": "Providing a mentor and judge",
-  "provedennia_vorkshopu_abo_treningu": "Conducting a workshop or training (25-45 min)",
-  "loho_na_futbolkakh": "Logo on T-shirts",
-  "nomination_vid_kompanii": "Nomination from the company",
-  "post_pro_kompanii_v_instagram": "Post about the company on Instagram",
-  "world_cafe": "World cafe",
-  "interaktyvni_insta_stories": "Interactive Insta-stories",
-  "tvorchist_bez_mezh": "Unlimited creativity",
-  "partnerskyi_paket": "Partnership package",
+  "Best": {
+    "organizer": "project organizer",
+    "information": " — is a chapter of an international non-profit public organization that brings together students of technical specialties. Our mission is to develop students through the exchange of knowledge and cooperation between companies, universities and students in Europe.",
+    "LBGs": "Centers",
+    "countrys": "Country",
+    "years": "Years of experience" 
+  },
   "nazva_kompanii": "Company name",
   "poshta": "Mail",
-   "dateOfEvent" : "May 27-28"
+  "dateOfEvent": "May 27-28",
+  "topic": "Topic:"
 }
