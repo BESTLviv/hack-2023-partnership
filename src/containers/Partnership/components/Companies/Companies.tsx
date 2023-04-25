@@ -19,13 +19,15 @@ import Dataart from '../../../../assets/icons/companies/Dataart.svg';
 import Leobit from '../../../../assets/icons/companies/Leobit.svg';
 import SoftServe from '../../../../assets/icons/companies/SoftServe.svg';
 import AnimationWrapper from '../../../../Animations';
+import { useTranslation } from 'react-i18next';
 
 
 const Companies = () => {
+    const { t } = useTranslation();
     return (
         <AnimationWrapper id={'companies'} animationType={'fadeIn'} duration={1} delay={0.5}>
             <div style={{display: 'flex', alignItems: 'center', width: '100%', flexDirection: 'column'}}>
-                <HeaderText text={'Нас підтримували'}/>
+                <HeaderText text={t('supported_by')}/>
                 <div className={styles.companiesWrapper}>
                     <img className={styles.logo} src={QsfDitigatl}/>
                     <img className={styles.logo} src={Sombra}/>
