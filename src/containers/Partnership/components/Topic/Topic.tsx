@@ -3,8 +3,10 @@ import * as React from 'react';
 import HeaderText from "../../../../components/HeaderText";
 import AnimationWrapper from "../../../../Animations";
 import styles from './Topic.module.scss';
+import {useTranslation} from "react-i18next";
 
 export const Topic = () => {
+    const {t} = useTranslation()
     return (
         <AnimationWrapper delay={0.5} duration={1} animationType={'fadeIn'}>
 

@@ -1,0 +1,64 @@
+{
+  "about_us": "About us",
+  "questions": "Questions",
+  "contacts": "Contacts",
+  "become_partner": "Become a partner",
+  "hackathon": {
+    "title": "BEST::HACKath0n —",
+    "description": "an event where IT students team up to create a new software product within 24 hours in a non-stop programming format.",
+    "second_description" : "This year's theme \"volunteering\" will allow students to participate in an important social process and focus on developing creative and innovative solutions. which will help increase the effectiveness and popularity of volunteering in Ukraine.",
+    "theme": "volunteering",
+    "benefits": [
+      "Increased brand recognition",
+      "Effective PR targeted at the intended audience",
+      "Opportunity to find and support interesting ideas on the theme of volunteering",
+      "Improved image among students",
+      "Investment in ambitious and talented young people"
+    ]
+  },
+  "statistics": {
+    "tg_bot_users": "Number of users on Tg-bot",
+    "registered_users": "Number of users who completed the full registration process",
+    "selected_teams": "Number of teams that passed the selection"
+  },
+  "supported_by": "Supported by:",
+  "partner_reviews": [
+    {
+      "company_name": "Tsukat",
+      "review": "An effective networking event was held, which gave results almost immediately, the organizers quickly responded to changes and made an excellent report. Overall, we had a positive experience."
+    },
+    {
+      "company_name": "OSF DIGITAL",
+      "review": "It was a good event, and it was an interesting experience for us."
+    },
+    {
+      "company_name": "Keepit",
+      "review": "We really enjoyed the event, and it was inspiring."
+    }
+  ],
+  "bazovyi_paket": "Basic package",
+  "lohotyp_kompanii_na_brend_volii_ta_na_saiti_proiektu": "Company logo on the brand wall and on the project website",
+  "promotsiia_v_sotsialnykh_merezakh": "Promotion on social media",
+  "foto_ta_video_zvit": "Photo and video report",
+  "lohotyp_ta_zhadka_pro_kompaniiu_u_post_video": "Company logo and mention in post video",
+  "transliuvannia_video_kompanii_pid_chas_khakatonu": "Live streaming of company video during the Hackathon",
+  "uchast_u_netvorkinhu": "Participation in networking",
+  "uchast_v_blahodiinomu_zbori_rozihrashi_dlia_zsu": "Participation in a charity collection-raffle for the Armed Forces of Ukraine (upon your request)",
+  "recruiter": "Recruiter",
+  "rozsylka_vakansii_u_telegram_boti": "Mailing of vacancies in the Telegram bot",
+  "dostup_do_bazy_cv_uchasnykiv": "Access to the database of participant CVs",
+  "initiator": "Initiator",
+  "get_to_know": "Get to know",
+  "nadanina_mentora_ta_suddi": "Providing a mentor and judge",
+  "provedennia_vorkshopu_abo_treningu": "Conducting a workshop or training (25-45 min)",
+  "loho_na_futbolkakh": "Logo on T-shirts",
+  "nomination_vid_kompanii": "Nomination from the company",
+  "post_pro_kompanii_v_instagram": "Post about the company on Instagram",
+  "world_cafe": "World cafe",
+  "interaktyvni_insta_stories": "Interactive Insta-stories",
+  "tvorchist_bez_mezh": "Unlimited creativity",
+  "partnerskyi_paket": "Partnership package",
+  "nazva_kompanii": "Company name",
+  "poshta": "Mail",
+   "dateOfEvent" : "May 27-28"
+}

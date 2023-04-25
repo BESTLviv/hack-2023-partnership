@@ -5,6 +5,7 @@ import {IMG_8088, IMG_8091, IMG_8200, IMG_9447} from '../../assets';
 import {ICard} from './types';
 import styles from './CaroselSection.module.scss'
 import AnimationWrapper from "../../Animations";
+import {useTranslation} from "react-i18next";
 
 const cards: ICard[] = [
     {
@@ -21,7 +22,7 @@ const cards: ICard[] = [
     },
 ];
 const CarouselSection = () => {
-
+const {t} = useTranslation()
     return (
         <AnimationWrapper id={'aboutUs'} duration={2} animationType={'slideUp'} className={styles.carouselSectionContainer}>
 
@@ -30,13 +31,11 @@ const CarouselSection = () => {
             </div>
 
             <div className={styles.textContainer}>
-                <p className={styles.title}>BEST::HACKath0n — </p>
-                <p className={styles.space}>це захід, під час якого студенти IT-спеціальностей командно створюють
-                    новий
-                    програмний продукт за 24
-                    години в форматі non-stop programming.
+                <p className={styles.title}>{t('hackathon.title')}</p>
+                <p className={styles.space}>{t('hackathon.description')}
                 </p>
-                <p>Це один з найцікавіших форматів проведення змагань, оскільки за короткий час команди повинні створити свій проект та вміти вдало його презентувати. Хороша можливість для студентів покращити навички роботи в команді, познайомитись з однодумцями і поспілкуватись з представниками компаній.
+                <p>
+                    {t('hackathon.second_description')}
                 </p>
             </div>
 

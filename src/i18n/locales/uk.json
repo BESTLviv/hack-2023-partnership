@@ -1,0 +1,65 @@
+{
+  "about_us": "Про нас",
+  "questions": "Запитання",
+  "contacts": "Контакти",
+  "become_partner": "Стати партнером",
+  "hackathon": {
+    "title": "BEST::HACKath0n —",
+    "description": "це захід, під час якого студенти IT-спеціальностей командно створюють новий програмний продукт за 24 години в форматі non-stop programming.",
+    "second_description" : "Цьогорічна тема \"волонтерство\" дозволить студентам долучитися до важливого суспільного процесу та зосередитися на розробці креативних  й інноваційних рішень. які допоможуть підвищити ефективність та популярність волонтерської діяльності в Україні.\n ",
+    "theme": "волонтерство",
+    "benefits": [
+      "Підвищення впізнаваності бренду",
+      "Ефективний піар, спрямований на цільову аудиторію",
+      "Шанс знайти та підтримати цікаві ідеї в темі ‘Волонтерство’",
+      "Покращення іміджу серед студентів",
+      "Інвестиція в амбітну та талановиту молодь"
+    ]
+  },
+  "statistics": {
+    "tg_bot_users": "Кількість користувачів у Tg-боті",
+    "registered_users": "Кількість користувачів, що пройшли повну реєстрацію",
+    "selected_teams": "Кількість команд, що пройшли відбір"
+  },
+  "supported_by": "Нас підтримували:",
+  "partner_reviews": [
+    {
+      "company_name": "Tsukat",
+      "review": "На заході був проведений ефективний нетворкінг, який дав перші результати майже одразу, організатори швидко реагували на зміни та оформили чудовий звіт. Загалом залишились позитивні враження."
+    },
+    {
+      "company_name": "OSF DIGITAL",
+      "review": "Хороший івент, для нас це був цікавий досвід."
+    },
+    {
+      "company_name": "Keepit",
+      "review": "Подія нам дуже сподобалась і надихнула."
+    }
+  ],
+
+  "bazovyi_paket": "Базовий пакет",
+  "lohotyp_kompanii_na_brend_volii_ta_na_saiti_proiektu": "Логотип компанії на бренд-волі та на сайті проєкту",
+  "promotsiia_v_sotsialnykh_merezakh": "Промоція в соціальних мережах",
+  "foto_ta_video_zvit": "Фото та відео звіт",
+  "lohotyp_ta_zhadka_pro_kompaniiu_u_post_video": "Логотип та згадка про компанію у пост відео",
+  "transliuvannia_video_kompanii_pid_chas_khakatonu": "Транслювання відео компанії під час Хакатону",
+  "uchast_u_netvorkinhu": "Участь у нетворкінгу",
+  "uchast_v_blahodiinomu_zbori_rozihrashi_dlia_zsu": "Участь в благодійному зборі-розіграші для ЗСУ (За вашим бажанням)",
+  "recruiter": "Recruiter",
+  "rozsylka_vakansii_u_telegram_boti": "Розсилка вакансій у Telegram боті",
+  "dostup_do_bazy_cv_uchasnykiv": "Доступ до бази CV учасників",
+  "initiator": "Initiator",
+  "get_to_know": "Get to know",
+  "nadanina_mentora_ta_suddi": "Надання ментора та судді",
+  "provedennia_vorkshopu_abo_treningu": "Проведення воркшопу або тренінгу (25-45 хв)",
+  "loho_na_futbolkakh": "Лого на футболках",
+  "nomination_vid_kompanii": "Номінація від компанії",
+  "post_pro_kompanii_v_instagram": "Пост про компанію в Instagram",
+  "world_cafe": "World cafe",
+  "interaktyvni_insta_stories": "Інтерактивні Insta-stories",
+  "tvorchist_bez_mezh": "Творчість без меж",
+  "partnerskyi_paket": "Партнерський пакет",
+  "nazva_kompanii": "Назва компанії",
+  "poshta": "Пошта",
+  "dateOfEvent" : "Травень 27-28"
+}
