@@ -60,10 +60,8 @@ const Offer = () => {
                 <div>
                     <div className={styles.feedback_container}>
                         <div className={styles.additionalInfo_container}>
-                            <p>
-                                {t('service_packages.charitable_collection')}
-                            </p>
-
+                            <h3> {t('service_packages.ZSU')}</h3>
+                            <p> {t('service_packages.charitable_collection')} </p>
                             <p>{t('service_packages.NBU_course')}</p>
                             <p>{t('service_packages.previous_partners')}</p>
                             <p>{t('service_packages.2_opts')}</p>
