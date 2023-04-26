@@ -1,22 +1,32 @@
-import {Flex} from '@chakra-ui/react';
+import AnnaHukSvg from '../../assets/images/team/anna_huk.png';
+import BohdanVivcharSvg from '../../assets/images/team/bohdan_vivchar.png';
+import SofiaLevSvg from '../../assets/images/team/sofia_lev.png';
 
 import style from '../team/Teammate.module.scss';
 
 interface TeammateProps {
-    avatarSrc: string,
     name: string;
     position: string;
     number: string;
     email: string
 }
 
+const getImage = (email: string) => {
+    switch (email) {
+        case "anna.huk.best@gmail.com": return AnnaHukSvg;
+        case "levsophia11@gmail.com": return SofiaLevSvg;
+        case "bohdanvivchar.best@gmail.com": return BohdanVivcharSvg;
+    }
+}
 const Teammate: React.FC<TeammateProps> = ({
-                                               // eslint-disable-next-line react/prop-types
-                                               avatarSrc, name, position, number, email
-                                           }) => {
+    // eslint-disable-next-line react/prop-types
+    name, position, number, email
+}) => {
+
     return (
         <div className={style.teammate}>
-            <img src={avatarSrc} alt="teammate" className={style.teammate_avatar} width={275}/>
+
+            <img src={getImage(email)} alt="teammate" className={style.teammate_avatar} width={275} />
             <div className={style.contactBody}>
                 <div>
                     <p className={style.teammate_name}>{name}</p>
