@@ -4,13 +4,13 @@
     "title": "BEST::HACKath0n —",
     "description": "an event where IT students team up to create a new software product within 24 hours in a non-stop programming format.",
     "second_description": "This is one of the most interesting formats of the competition, as teams have to create their project in a short time and be able to present it successfully. It is a good opportunity for students to improve their teamwork skills, meets like-minded people, and communicate with company representatives.",
-    "volonteer_descreption": "This year's theme of the programming marathon, \"Volunteering\", provides students with a unique opportunity to participate in the current social process. Participants will focus on developing creative and innovative solutions that will help increase the effectiveness and popularity of volunteering in Ukraine. Volunteerism plays a key role in helping people and communities by engaging in a variety of areas, from charity to the environment. However, volunteerism faces several challenges that need to be addressed.",
+    "volonteer_descreption": "This year's topic is volunteering, provides students with a unique opportunity to participate in the current social process. Participants will focus on developing creative and innovative solutions that will help increase the effectiveness and popularity of volunteering in Ukraine. Volunteerism plays a key role in helping people and communities by engaging in a variety of areas, from charity to the environment. However, volunteerism faces several challenges that need to be addressed.",
     "theme": "volunteering",
     "benefits": {
-      "brand_recognition": "Increased brand recognition",
+      "brand_recognition": "Increased brand awareness",
       "effective_pr": "Effective PR targeted at the ",
       "opportunity_to_sup": "Opportunity to find and support interesting ideas on the theme of volunteering",
-      "improved_image": "Improved image among students",
+      "improved_image": "Improved image among students from Ukraine",
       "investment_in_people": "Investment in ambitious and talented young people"
     },
     "CA": "target audience"
@@ -25,7 +25,7 @@
   "partner_reviews": {
     "topic": "Partner feedback",
     "reviews": {
-      "tsukat_review": "The event was an effective networking event that gave the first results almost immediately, the organizers were quick to respond to changes and issued an excellent report. In general, we have positive impressions.",
+      "tsukat_review": "The event featured effective networking, which yielded results almost immediately. The organizers were quick to respond to changes and prepared an excellent report. Overall, we had a positive experience.",
       "osf_review": "Good event, it was an interesting experience for us.",
       "keepit_review": "We liked the event and were inspired by it."
     }
@@ -36,13 +36,13 @@
       {
         "title": "General Information:",
         "list": [
-          "Intermediate level of English: B1",
-          "52% of participants have work experience in their specialty",
-          "92% of participants are programmers by profession"
+          "Average English language proficiency level: B1",
+          "52% of participants have related  work experience in programming",
+          "92% of participants are students of IT-related programs at the university"
         ]
       },
       {
-        "title": "Specialties:",
+        "title": "University programs:",
         "list": [
           "Software engineering",
           "Computer Science",
@@ -83,9 +83,9 @@
         "id": "Basic",
         "price": 300,
         "list": [
-          "Company logo on the brandwoll and the project website.",
+          "Company logo on the brand wall and the project website.",
           "Promotion in social networks (information about the company)",
-          "Logo and mention of the company in the post-project video",
+          "Logo and mention of the company in the post-project movie",
           "Participation in networking"
         ],
         "isLimited": "none"
@@ -95,7 +95,7 @@
         "id": "Recruiter",
         "price": 200,
         "list": [
-          "Sending vacancies in a Telegram bot",
+          "Career opportunities' distribution in a Telegram bot",
           "Access to the CV database of participants"
         ],
         "isLimited": "none"
@@ -105,7 +105,7 @@
         "id": "Initiator",
         "price": 700,
         "list": [
-          "Providing a mentor and a judge",
+          "Opportunity to introduce a judge and/or mentor",
           "Conducting a workshop or training (25-45 minutes)",
           "Logo on T-shirts",
           "Nomination from the company",
@@ -128,25 +128,25 @@
     "OFFERS_details": {
       "Basic": [
         {
-          "title": "Company logo on the brandwoll and the project website.",
-          "text": "Placement of the partner's logo on the project branding and website of the Hackathon"
+          "title": "Company logo on the brand wall and the project website",
+          "text": "Placement of the partner's logo on the project brand wall and website of the Hackathon"
         },
         {
           "title": "Promotion on social networks (company information)",
           "text": "Posting information about the company on social networks: \n a. 1 mention in Instagram story \n b. 1 post on LinkedIn \nc. Post digest in the Telegram channel"
         },
         {
-          "title": "Logo and mention of the company in the post-project video",
-          "text": "Adding the company logo to the video that will be created and posted on Instagram after the successful completion of the Hackathon. The company and its contribution to the event will also be mentioned in the video."
+          "title": "Logo and mention of the company in the post-project movie",
+          "text": "Adding the company logo to the video that will be created and posted on Instagram after the successful completion of the Hackathon. We will mention the company and its contribution to the event."
         },
         {
           "title": "Participation in networking",
-          "text": "Networking is a means of meeting between participants, organizers, and company representatives in an informal setting, which can be a great opportunity for students to find a job or internship, and for companies to provide these opportunities. The time of the event is approximately one hour."
+          "text": "Networking is way of communication between participants, organizers, and company representatives in an informal setting, which can be a great opportunity for students to find a job or internship, and for companies to provide these opportunities. The time of the event is approximately one hour."
         }
       ],
       "Initiator": [
         {
-          "title": "Providing a mentor and judge",
+          "title": "Opportunity to introduce a judge and/or mentor",
           "text": "A mentor is a person who has experience and knowledge in the field in which the team works. They help participants solve problems that arise during the development of the project. a judge is a person who evaluates the projects developed by the teams during the hackathon. They evaluate the quality of implementation, relevance to the hackathon topic, innovation, practical value, and other parameters."
         },
         {
@@ -155,7 +155,7 @@
         },
         {
           "title": "Logo on T-shirts",
-          "text": "Your and other companies' logos will be printed on the backs of the T-shirts of all people attending the event, which they will receive at the opening of the hackathon."
+          "text": "The logo of your company will be printed on the back of the t-shirts that all attendees will receive at the opening of the hackathon."
         },
         {
           "title": "Nomination from the company",
@@ -163,13 +163,13 @@
         },
         {
           "title": "Post about the company on Instagram",
-          "text": "We will publish a post about your company on our Instagram page that will be available forever. In this post, we will provide information about your company and note that you are one of our main partners in this hackathon."
+          "text": "We will publish a post about your company on our Instagram page. In this post, we will provide information about your company and note that you are one of our main partners in this hackathon."
         }
       ],
       "Recruiter": [
         {
-          "title": "Sending vacancies in a Telegram bot",
-          "text": "Semi-annual mailing of vacancies and activities (courses, internships) from the company in the Telegram bot."
+          "title": "Career opportunities' distribution in Telegram bot",
+          "text": "Semiannual distribution of job vacancies and other activities (such as courses and internships) from the company through a Telegram bot."
         },
         {
           "title": "Access to the CV database of participants",
@@ -211,8 +211,8 @@
       "answer": "The hackathon will not stop, the power supply will be provided by the generator."
     },
     {
-      "question": "Will there be a shelter that is the right size for all participants?",
-      "answer": "Yes, in case of an air raid, the organizers will guide all participants to the shelter."
+      "question": "Will the shelter with a room for all the participants of the project be provided?",
+      "answer": "Yes, in case of an air raid alarm, the organizers will lead all participants to shelters."
     }
   ],
   "Best": {
