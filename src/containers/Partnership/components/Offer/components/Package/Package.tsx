@@ -4,6 +4,7 @@ import SelectableCard from "../../../../../../components/SelectedCard/SelectedCa
 import {IOffer, ordersId, setPopupTitle} from "../../../../../../redux/slices/orderSlice/orderSlice";
 import { useDispatch } from 'react-redux';
 import Offer from '../../Offer';
+import { useTranslation } from 'react-i18next';
 
 
 type Props = {
@@ -25,6 +26,7 @@ const Package = ({title, id, isSelected, list, price, isMain, onClick, isLimited
         document.body.style.overflow = 'hidden';
         dispatch(setPopupTitle(id));
     }
+    const { t } = useTranslation();
 
     return (
         <>
@@ -49,7 +51,7 @@ const Package = ({title, id, isSelected, list, price, isMain, onClick, isLimited
       {
         (isLimited === 'Обмежено')
           ? <div >
-            <p className={styles.package_limited}>Обмежено </p> 
+            <p className={styles.package_limited}>{t('service_packages.limited')} </p> 
             </div> 
           : <span></span>
       }

@@ -3,8 +3,8 @@
     "benefits_topic": "For partners it is:",
     "title": "BEST::HACKath0n —",
     "description": "an event where IT students team up to create a new software product within 24 hours in a non-stop programming format.",
-    "second_description": "This is one of the most interesting formats of the competition, as teams have to create their project in a short time and be able to present it successfully. It is a good opportunity for students to improve their teamwork skills, meet like-minded people and communicate with company representatives.",
-    "volonteer_descreption": "This year's theme of the program marathon, \"Volunteering\", provides students with a unique opportunity to participate in the current social process. Participants will focus on developing creative and innovative solutions that will help increase the effectiveness and popularity of volunteering in Ukraine. Volunteerism plays a key role in helping people and communities by engaging in a variety of areas, from charity to the environment. However, volunteerism faces a number of challenges that need to be addressed.",
+    "second_description": "This is one of the most interesting formats of the competition, as teams have to create their project in a short time and be able to present it successfully. It is a good opportunity for students to improve their teamwork skills, meets like-minded people, and communicate with company representatives.",
+    "volonteer_descreption": "This year's theme of the programming marathon, \"Volunteering\", provides students with a unique opportunity to participate in the current social process. Participants will focus on developing creative and innovative solutions that will help increase the effectiveness and popularity of volunteering in Ukraine. Volunteerism plays a key role in helping people and communities by engaging in a variety of areas, from charity to the environment. However, volunteerism faces several challenges that need to be addressed.",
     "theme": "volunteering",
     "benefits": {
       "brand_recognition": "Increased brand recognition",
@@ -27,11 +27,11 @@
     "reviews": {
       "tsukat_review": "The event was an effective networking event that gave the first results almost immediately, the organizers were quick to respond to changes and issued an excellent report. In general, we have positive impressions.",
       "osf_review": "Good event, it was an interesting experience for us.",
-      "keepit_review": "We really liked the event and were inspired by it."
+      "keepit_review": "We liked the event and were inspired by it."
     }
   },
   "target_audience": {
-    "topic": "Information about the target audience of BEST:Hackathon",
+    "topic": "Information about the target audience of BEST::Hackathon",
     "AUDIENCE_INFO": [
       {
         "title": "General Information:",
@@ -76,13 +76,14 @@
   },
   "service_packages": {
     "Offer": "Offer",
+    "limited": "Limited",
     "Offers": [
       {
         "title": "Basic",
         "id": "Basic",
         "price": 300,
         "list": [
-          "Company logo on the brand will and on the project website.",
+          "Company logo on the brandwoll and the project website.",
           "Promotion in social networks (information about the company)",
           "Logo and mention of the company in the post-project video",
           "Participation in networking"
@@ -110,7 +111,7 @@
           "Nomination from the company",
           "Post about the company on Instagram"
         ],
-        "isLimited": "Limited"
+        "isLimited": "Обмежено"
       },
       {
         "title": "Get to know",
@@ -119,8 +120,7 @@
         "list": [
           "World cafe",
           "Interactive Insta-stories",
-          "Task of the day",
-          "Broadcasting the company's video during the Hackathon"
+          "Task of the day"
         ],
         "isLimited": "none"
       }
@@ -128,30 +128,30 @@
     "OFFERS_details": {
       "Basic": [
         {
-          "title": "Company logo on branding materials and project website",
-          "text": "Company logo on the project branding and website - Placement of the partner's logo on the project branding and website of the Hackathon"
+          "title": "Company logo on the brandwoll and the project website.",
+          "text": "Placement of the partner's logo on the project branding and website of the Hackathon"
         },
         {
-          "title": "Promotion on social media (company information)",
+          "title": "Promotion on social networks (company information)",
           "text": "Posting information about the company on social networks: \n a. 1 mention in Instagram story \n b. 1 post on LinkedIn \nc. Post digest in the Telegram channel"
         },
         {
-          "title": "Logo and mention of the company in the post project video",
-          "text": "Company logo and mention in the post-project video - Adding the company logo to the video that will be created and posted on Instagram after the successful completion of the Hackathon. The company and its contribution to the event will also be mentioned in the video."
+          "title": "Logo and mention of the company in the post-project video",
+          "text": "Adding the company logo to the video that will be created and posted on Instagram after the successful completion of the Hackathon. The company and its contribution to the event will also be mentioned in the video."
         },
         {
           "title": "Participation in networking",
-          "text": "Networking is a means of meeting between participants, organizers and company representatives in an informal setting, which can be a great opportunity for students to find a job or internship, and for companies to provide these opportunities. The time of the event is approximately one hour."
+          "text": "Networking is a means of meeting between participants, organizers, and company representatives in an informal setting, which can be a great opportunity for students to find a job or internship, and for companies to provide these opportunities. The time of the event is approximately one hour."
         }
       ],
       "Initiator": [
         {
           "title": "Providing a mentor and judge",
-          "text": "A mentor is a person who has experience and knowledge in the field in which the team works. They help participants solve problems that arise during the development of the project. judge is a person who evaluates the projects developed by the teams during the hackathon. They evaluate the quality of implementation, relevance to the hackathon topic, innovation, practical value, and other parameters."
+          "text": "A mentor is a person who has experience and knowledge in the field in which the team works. They help participants solve problems that arise during the development of the project. a judge is a person who evaluates the projects developed by the teams during the hackathon. They evaluate the quality of implementation, relevance to the hackathon topic, innovation, practical value, and other parameters."
         },
         {
           "title": "Conducting a workshop or training",
-          "text": "A workshop is a type of interactive learning where participants perform a series of learning activities. For example, it can be a demonstration, a practical lesson, or a discussion club. Training is a certain type of learning that aims to increase the level of knowledge and skills of participants. Its main goal is to teach techniques, methods and strategies that can be useful for solving specific problems. For example, training in communication techniques, project management, web technologies, etc."
+          "text": "A workshop is a type of interactive learning where participants perform a series of learning activities. For example, it can be a demonstration, a practical lesson, or a discussion club. Training is a certain type of learning that aims to increase the level of knowledge and skills of participants. Its main goal is to teach techniques, methods, and strategies that can be useful for solving specific problems. For example, training in communication techniques, project management, web technologies, etc."
         },
         {
           "title": "Logo on T-shirts",
@@ -159,10 +159,10 @@
         },
         {
           "title": "Nomination from the company",
-          "text": "You can choose your own nomination for the competition, which will be assigned to your company. The winner is determined by the company's representative and awarded with a prize. The nomination may relate to the use of certain technologies or other features of the team's work of your choice."
+          "text": "You can choose your nomination for the competition, which will be assigned to your company. The winner is determined by the company's representative and awarded with a prize. The nomination may relate to the use of certain technologies or other features of the team's work of your choice."
         },
         {
-          "title": "Instagram post about the company",
+          "title": "Post about the company on Instagram",
           "text": "We will publish a post about your company on our Instagram page that will be available forever. In this post, we will provide information about your company and note that you are one of our main partners in this hackathon."
         }
       ],
@@ -182,20 +182,16 @@
           "text": "This is a method of interaction between a group of people aimed at co-creating and exchanging ideas through conversations on a predetermined topic in a relaxed atmosphere. The company will be allocated 15 minutes to interact with the participants."
         },
         {
-          "title": "Interactive Instagram Stories",
+          "title": "Interactive insta-stories",
           "text": "Together with our team, we will create content to promote Instagram stories on the organization's page*. Examples of interactive content: \"Question and Answer\" section; \"How our employee's day goes\" section, etc. "
         },
         {
           "title": "Task of the day",
-          "text": "The Hackathon team will post a creative task on behalf of your company on our Instagram. Examples of tasks: come up with a slogan for the company, draw an alternative logo, create an original photo on a specific topic, etc. Afterwards, we will select a winner who will be able to receive your merchandise during the event."
-        },
-        {
-          "title": "Broadcasting the company's video during the Hackathon",
-          "text": "During the Hackathon, there will be projectors in the halls where your company will be able to show its commercial or other information about itself."
+          "text": "The Hackathon team will post a creative task on behalf of your company on our Instagram. Examples of tasks: come up with a slogan for the company, draw an alternative logo, create an original photo on a specific topic, etc. Afterward, we will select a winner who will be able to receive your merchandise during the event."
         }
       ]
     },
-    "charitable_collection": "Everyone who becomes a partner in our project has the opportunity to join a charity collection-raffle for the Armed Forces on our social media. Winners will be randomly selected among the people who donate and receive gifts from partner companies. Also, after the successful completion of the Hackathon, you will receive a photo and video report from the organizers.",
+    "charitable_collection": "Everyone who becomes a partner in our project has the opportunity to join a charity collection raffle for the Armed Forces on our social media. Winners will be randomly selected among the people who donate and receive gifts from partner companies. Also, after the successful completion of the Hackathon, you will receive a photo and video report from the organizers.",
     "NBU_course": "*Payment will be made at the NBU exchange rate",
     "previous_partners": "for partners of previous projects -5%",
     "2_opts": "basic + 2 options - $50",
@@ -205,14 +201,14 @@
   "cart": {
     "topic": "Cart",
     "regular_partner": "Regular partner",
-    "name": "company name",
-    "email": "email",
+    "name": "Company name",
+    "email": "Email",
     "submit": "submit"
   },
   "QA": [
     {
       "question": "Will the event be paused in the event of a power outage?",
-      "answer": "The hackathon will not stop, the power supply will be provided by the generator"
+      "answer": "The hackathon will not stop, the power supply will be provided by the generator."
     },
     {
       "question": "Will there be a shelter that is the right size for all participants?",
@@ -221,7 +217,7 @@
   ],
   "Best": {
     "organizer": "project organizer",
-    "information": " — is a chapter of an international non-profit public organization that brings together students of technical specialties. Our mission is to develop students through the exchange of knowledge and cooperation between companies, universities and students in Europe.",
+    "information": " — is a chapter of an international non-profit public organization that brings together students of technical specialties. Our mission is to develop students through the exchange of knowledge and cooperation between companies, universities, and students in Europe.",
     "LBGs": "Centers",
     "countrys": "Country",
     "years": "Years of experience"
@@ -229,7 +225,7 @@
   "team": [
     {
       "name": "Anna Huk",
-      "position": "Responsible for Corporate Communications",
+      "position": "Responsible for corporate relations",
       "number": "+380686814667",
       "email": "anna.huk.best@gmail.com"
     },
@@ -241,7 +237,7 @@
     },
     {
       "name": "Bohdan Vivchar",
-      "position": "Responsible for Corporate Communications",
+      "position": "Responsible for corporate relations",
       "number": "+380987567648",
       "email": "bohdanvivchar.best@gmail.com"
     }
