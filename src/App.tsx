@@ -7,9 +7,18 @@ import {Provider} from 'react-redux';
 import store from './redux/store';
 import {I18nextProvider} from 'react-i18next';
 import i18n from './i18n';
+import {useEffect} from "react";
 
 function App() {
 
+
+    useEffect(() => {
+        const url = new URL(window.location.href);
+        if (!url.searchParams.has("lng")) {
+            url.searchParams.append("lng", "uk");
+            window.location.replace(url.toString());
+        }
+    }, []);
     return (
         <ChakraProvider>
             <Provider store={store}>

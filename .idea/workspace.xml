@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="firebase">
-      <change afterPath="$PROJECT_DIR$/src/i18n/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/locales/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/locales/uk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/react-18next.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
+    <list default="true" id="714ca365-bae5-40fc-a6c1-28f94cb3d95b" name="Changes" comment="feat: i18n">
+      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/yy.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Partnership/components/Topic/Topic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Partnership/components/Topic/Topic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/CarouselSection/CarouselSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/CarouselSection/CarouselSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="volodya_rud" />
+        <entry key="$PROJECT_DIR$" value="bohdan-translate" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +86,12 @@
       <workItem from="1681819153037" duration="2278000" />
       <workItem from="1682006037292" duration="3740000" />
       <workItem from="1682446835948" duration="2450000" />
-      <workItem from="1682449672267" duration="356000" />
+      <workItem from="1682449672267" duration="748000" />
+      <workItem from="1682542421705" duration="2169000" />
+      <workItem from="1682588879973" duration="1706000" />
+      <workItem from="1682592796941" duration="260000" />
+      <workItem from="1682598017265" duration="655000" />
+      <workItem from="1682720474648" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="fixed carousel">
       <created>1680377927357</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680603272278</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: i18n">
+      <created>1682450192350</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682450192350</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/bohdan-translate" />
                       </list>
                     </value>
                   </entry>
@@ -209,6 +216,7 @@
     <MESSAGE value="fixed icons and added links to social media, added icons for companies" />
     <MESSAGE value="fixes" />
     <MESSAGE value="firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="firebase" />
+    <MESSAGE value="feat: i18n" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: i18n" />
   </component>
 </project>
