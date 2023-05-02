@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 const ProjectOrganizator: React.FC = () => {
     const { t } = useTranslation();
     const bestData: BestDataProps[] = [
-        { count: 86, subject: t('Best.LBGs').toString() },
+        { count: 85, subject: t('Best.LBGs').toString() },
         { count: 30, subject: t('Best.countrys').toString() },
         { count: 34, subject: t('Best.years').toString() }
     ];
